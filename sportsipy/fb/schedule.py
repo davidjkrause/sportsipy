@@ -613,10 +613,10 @@ class Schedule:
         if not doc:
             squad_id = _lookup_team(team_id)
             try:
-                doc = pq(SQUAD_URL % squad_id)
+                doc = pq(url=SQUAD_URL % squad_id)
             except HTTPError:
                 return
-        schedule = utils._get_stats_table(doc, 'table#matchlogs_all')
+        schedule = utils._get_stats_table(doc, 'table#matchlogs_for')
 
         if not schedule:
             utils._no_data_found()

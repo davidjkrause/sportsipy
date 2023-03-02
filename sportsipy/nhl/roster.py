@@ -209,7 +209,7 @@ class Player(AbstractPlayer):
         """
         url = self._build_url()
         try:
-            url_data = pq(url)
+            url_data = pq(url=url)
         except HTTPError:
             return None
         return pq(utils._remove_html_comment_tags(url_data))
@@ -1144,7 +1144,7 @@ class Roster:
             Returns a PyQuery object of the team's HTML page.
         """
         try:
-            return pq(utils._remove_html_comment_tags(pq(url)))
+            return pq(utils._remove_html_comment_tags(pq(url=url)))
         except HTTPError:
             return None
 

@@ -1642,7 +1642,7 @@ class Roster:
         """
         if not doc:
             try:
-                doc = pq(SQUAD_URL % self._squad_id)
+                doc = pq(url=SQUAD_URL % self._squad_id)
                 doc = pq(_remove_html_comment_tags(doc))
             except HTTPError:
                 return None

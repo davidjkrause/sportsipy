@@ -275,7 +275,7 @@ class Player(AbstractPlayer):
         """
         url = self._build_url()
         try:
-            url_data = pq(url)
+            url_data = pq(url=url)
         except (HTTPError, ParserError):
             return None
         # For NFL, a 404 page doesn't actually raise a 404 error, so it needs
@@ -1747,7 +1747,7 @@ class Roster:
             Returns a PyQuery object of the team's HTML page.
         """
         try:
-            return pq(utils._remove_html_comment_tags(pq(url)))
+            return pq(utils._remove_html_comment_tags(pq(url=url)))
         except HTTPError:
             return None
 

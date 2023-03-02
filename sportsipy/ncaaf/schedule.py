@@ -468,7 +468,7 @@ class Schedule:
                utils._url_exists(SCHEDULE_URL % (abbreviation.lower(),
                                                  str(int(year) - 1))):
                 year = str(int(year) - 1)
-        doc = pq(SCHEDULE_URL % (abbreviation.lower(), year))
+        doc = pq(url=SCHEDULE_URL % (abbreviation.lower(), year))
         schedule = utils._get_stats_table(doc, 'table#schedule')
         if not schedule:
             utils._no_data_found()
