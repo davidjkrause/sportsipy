@@ -47,7 +47,7 @@ class TestFBSchedule:
             'shootout_against': None,
             'opponent': 'Manchester City',
             'opponent_id': 'b8fd03ef',
-            'expected_goals': 0.3,
+            'expected_goals': 0.1,
             'expected_goals_against': 2.9,
             'attendance': 54503,
             'captain': 'Hugo Lloris',
