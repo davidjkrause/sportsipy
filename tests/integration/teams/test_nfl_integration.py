@@ -33,7 +33,10 @@ def mock_pyquery(url, timeout=None):
             else:
                 return read_file('%s_nfc.html' % YEAR)
 
-    html_contents = read_file('%s.html' % YEAR)
+    if 'gamelog' in url:
+        html_contents = read_file('%s_gamelog.html' % YEAR)
+    else:
+        html_contents = read_file('%s.html' % YEAR)
     return MockPQ(html_contents)
 
 

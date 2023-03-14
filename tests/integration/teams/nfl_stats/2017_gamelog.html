@@ -1,0 +1,1554 @@
+
+<!DOCTYPE html>
+<html data-version="klecko-" data-root="/home/pfr/deploy/www" lang="en" class="no-js" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+    <link rel="dns-prefetch" href="https://cdn.ssref.net/req/202303021" />
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+    (function() {
+	var host = window.location.hostname;
+	var element = document.createElement('script');
+	var firstScript = document.getElementsByTagName('script')[0];
+	var url = 'https://cmp.quantcast.com'
+	    .concat('/choice/', 'XwNYEpNeFfhfr', '/', host, 
+		    '/choice.js?tag_version=V2');
+	var uspTries = 0;
+	var uspTriesLimit = 3;
+	element.async = true;
+	element.type = 'text/javascript';
+	element.src = url;
+	
+	firstScript.parentNode.insertBefore(element, firstScript);
+	
+	function makeStub() {
+	    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+	    var queue = [];
+	    var win = window;
+	    var cmpFrame;
+	    
+	    function addFrame() {
+		var doc = win.document;
+		var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+		
+		if (!otherCMP) {
+		    if (doc.body) {
+			var iframe = doc.createElement('iframe');
+			
+			iframe.style.cssText = 'display:none';
+			iframe.name = TCF_LOCATOR_NAME;
+			doc.body.appendChild(iframe);
+		    } else {
+			setTimeout(addFrame, 5);
+		    }
+		}
+		return !otherCMP;
+	    }
+	    
+	    function tcfAPIHandler() {
+		var gdprApplies;
+		var args = arguments;
+		
+		if (!args.length) {
+		    return queue;
+		} else if (args[0] === 'setGdprApplies') {
+		    if (
+			args.length > 3 &&
+			    args[2] === 2 &&
+			    typeof args[3] === 'boolean'
+		    ) {
+			gdprApplies = args[3];
+			if (typeof args[2] === 'function') {
+			    args[2]('set', true);
+			}
+		    }
+		} else if (args[0] === 'ping') {
+		    var retr = {
+			gdprApplies: gdprApplies,
+			cmpLoaded: false,
+			cmpStatus: 'stub'
+		    };
+		    
+		    if (typeof args[2] === 'function') {
+			args[2](retr);
+		    }
+		} else {
+		    if(args[0] === 'init' && typeof args[3] === 'object') {
+			args[3] = Object.assign(args[3], { tag_version: 'V2' });
+		    }
+		    queue.push(args);
+		}
+	    }
+	    
+	    function postMessageEventHandler(event) {
+		var msgIsString = typeof event.data === 'string';
+		var json = {};
+		
+		try {
+		    if (msgIsString) {
+			json = JSON.parse(event.data);
+		    } else {
+			json = event.data;
+		    }
+		} catch (ignore) {}
+		
+		var payload = json.__tcfapiCall;
+		
+		if (payload) {
+		    window.__tcfapi(
+			payload.command,
+			payload.version,
+			function(retValue, success) {
+			    var returnMsg = {
+				__tcfapiReturn: {
+				    returnValue: retValue,
+				    success: success,
+				    callId: payload.callId
+				}
+			    };
+			    if (msgIsString) {
+				returnMsg = JSON.stringify(returnMsg);
+			    }
+			    if (event && event.source && event.source.postMessage) {
+				event.source.postMessage(returnMsg, '*');
+			    }
+			},
+			payload.parameter
+		    );
+		}
+	    }
+	    
+	    while (win) {
+		try {
+		    if (win.frames[TCF_LOCATOR_NAME]) {
+			cmpFrame = win;
+			break;
+		    }
+		} catch (ignore) {}
+		
+		if (win === window.top) {
+		    break;
+		}
+		win = win.parent;
+	    }
+	    if (!cmpFrame) {
+		addFrame();
+		win.__tcfapi = tcfAPIHandler;
+		win.addEventListener('message', postMessageEventHandler, false);
+	    }
+	};
+	
+	makeStub();
+	
+	var uspStubFunction = function() {
+	    var arg = arguments;
+	    if (typeof window.__uspapi !== uspStubFunction) {
+		setTimeout(function() {
+		    if (typeof window.__uspapi !== 'undefined') {
+			window.__uspapi.apply(window.__uspapi, arg);
+		    }
+		}, 500);
+	    }
+	};
+	
+	var checkIfUspIsReady = function() {
+	    uspTries++;
+	    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+		console.warn('USP is not accessible');
+	    } else {
+		clearInterval(uspInterval);
+	    }
+	};
+	
+	if (typeof window.__uspapi === 'undefined') {
+	    window.__uspapi = uspStubFunction;
+	    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+	}
+    })();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+
+    <title>Kansas City Chiefs 2017 Games and Schedule | Pro-Football-Reference.com</title>
+
+    
+    
+    <meta name="Description" content="Kansas City Chiefs 2017 Games and Schedule">
+    <link rel="canonical" href="https://www.pro-football-reference.com/teams/kan/2017/gamelog/" />
+
+
+<!-- include:start  ="/inc/klecko_header_full_pfr.html_f" -->
+<!-- yes:cookie regular load the cached css -->
+<script>function gup(n) {n = n.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]'); var r = new RegExp('[\\?&]'+n+'=([^&#]*)'); var re = r.exec(location.search);   return re === null?'':decodeURIComponent(re[1].replace(/\+/g,' '));}; document.srdev = gup('srdev')</script>
+<link rel="preconnect" href="https://cdn.ssref.net" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com"  crossorigin>
+<link rel="preconnect" href="https://www.googletagservices.com" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202303021/js/pfr/sr-min.js" as="script" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202303021/icons/sr_icons-min.svg?pfr" as="fetch" crossorigin>
+<link rel="preload"    href="https://www.pro-football-reference.com/short/inc/main_nav_menu.json" as="fetch" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/201604190/images/chosen-sprite.png" as="image" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202303021/css/pfr/sr-min.css" as="style"    crossorigin>
+
+<!-- CSS start -->
+<link rel="stylesheet" href="https://cdn.ssref.net/req/202303021/css/pfr/sr-min.css" type="text/css"
+      onload="if (document.srdev) { this.href = 'https://cdn.ssref.net/nocdn/dev/'.concat(document.srdev.substr(0,2),'/css/pfr/sr.css'); }" />
+<!-- CSS END -->
+
+<!-- JS START -->
+<script class="allowed">var sr_is_production = true;
+function vjs_getUrlParameter(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");e=new RegExp("[\\?&]"+e+"=([^&#]*)").exec(location.search);return null===e?"":decodeURIComponent(e[1].replace(/\+/g," "))}document.lang="","/es/"===window.location.pathname.substr(0,4)?document.lang="es":"/pt/"===window.location.pathname.substr(0,4)?document.lang="pt":"/fr/"===window.location.pathname.substr(0,4)?document.lang="fr":"/it/"===window.location.pathname.substr(0,4)?document.lang="it":"/de/"===window.location.pathname.substr(0,4)?document.lang="de":(window.location.pathname.substr(0,4),document.lang="en"),vjs_getUrlParameter("lang")&&(document.lang=vjs_getUrlParameter("lang")),document.srdev=null,vjs_getUrlParameter("srdev")&&(document.srdev=vjs_getUrlParameter("srdev"));var el,log_performance=!0,is_new_jscss_version=!1,sr_detect_operaMini=-1<navigator.userAgent.indexOf("Opera Mini"),sr_detect_firefox=(sr_detect_operaMini&&((el=document.querySelector("html")).className=el.className.concat(" operamini")),-1<navigator.userAgent.indexOf("Firefox")),sr_detect_firefoxMobile=(sr_detect_firefox&&((el=document.querySelector("html")).className=el.className.concat(" firefox")),-1<navigator.userAgent.indexOf("Firefox")&&(-1<navigator.userAgent.indexOf("Mobile")||-1<navigator.userAgent.indexOf("Tablet"))),sr_detect_ie=(sr_detect_firefoxMobile&&((el=document.querySelector("html")).className=el.className.concat(" firefox-mobile")),function(){var e=window.navigator.userAgent;if(0<e.indexOf("Trident/7.0"))return 11;if(0<e.indexOf("Trident/6.0"))return 10;if(0<e.indexOf("Trident/5.0"))return 9;for(var t=3,n=document.createElement("div"),r=n.getElementsByTagName("i");n.innerHTML="\x3c!--[if gt IE "+ ++t+"]><i></i><![endif]--\x3e",r[0];);return 4<t&&t}()),sr_detect_edge=!sr_detect_ie&&!!window.StyleMedia,sr_detect_safari=/Safari/.test(navigator.userAgent)&&/Apple Computer/.test(navigator.vendor),className="no-js",patt=((el=document.querySelector("html")).classList?el.classList.remove(className):el.className=el.className.replace(new RegExp("(^|\\b)"+className.split(" ").join("|")+"(\\b|$)","gi")," "),el.className=el.className.concat(" js"),!function(a,d,S){function E(e,t){return typeof e===t}function T(e){return"function"!=typeof d.createElement?d.createElement(e):m?d.createElementNS.call(d,"http://www.w3.org/2000/svg",e):d.createElement.apply(d,arguments)}function R(e,t,n,r){var o,i,a,s,l="modernizr",c=T("div");(s=d.body)||((s=T(m?"svg":"body")).fake=!0);if(parseInt(n,10))for(;n--;)(i=T("div")).id=r?r[n]:l+(n+1),c.appendChild(i);return(o=T("style")).type="text/css",o.id="s"+l,(s.fake?s:c).appendChild(o),s.appendChild(c),o.styleSheet?o.styleSheet.cssText=e:o.appendChild(d.createTextNode(e)),c.id=l,s.fake&&(s.style.background="",s.style.overflow="hidden",a=u.style.overflow,u.style.overflow="hidden",u.appendChild(s)),o=t(c,e),s.fake?(s.parentNode.removeChild(s),u.style.overflow=a,u.offsetHeight):c.parentNode.removeChild(c),!!o}function U(e){return e.replace(/([a-z])-([a-z])/g,function(e,t,n){return t+n.toUpperCase()}).replace(/^-/,"")}function D(e){return e.replace(/([A-Z])/g,function(e,t){return"-"+t.toLowerCase()}).replace(/^ms-/,"-ms-")}function q(e,t){var n=e.length;if("CSS"in a&&"supports"in a.CSS){for(;n--;)if(a.CSS.supports(D(e[n]),t))return!0;return!1}if("CSSSupportsRule"in a){for(var r=[];n--;)r.push("("+D(e[n])+":"+t+")");return R("@supports ("+(r=r.join(" or "))+") { #modernizr { position: absolute; } }",function(e){return"absolute"==(e=e,t=null,n="position","getComputedStyle"in a?(r=getComputedStyle.call(a,e,t),o=a.console,null!==r?n&&(r=r.getPropertyValue(n)):o&&o[o.error?"error":"log"].call(o,"getComputedStyle returning null, its possible modernizr test results are inaccurate")):r=!t&&e.currentStyle&&e.currentStyle[n],r);var t,n,r,o})}return S}function r(e,t,n,r,o){var i,a,s=e.charAt(0).toUpperCase()+e.slice(1),l=(e+" "+re.join(s+" ")+s).split(" ");if(E(t,"string")||void 0===t){var c=l,d=t,u=r,m=o;function f(){p&&(delete L.style,delete L.modElem)}if(m=void 0!==m&&m,void 0!==u){l=q(c,u);if(void 0!==l)return l}for(var p,h,g,v,_,y=["modernizr","tspan","samp"];!L.style&&y.length;)p=!0,L.modElem=T(y.shift()),L.style=L.modElem.style;for(g=c.length,h=0;h<g;h++)if(v=c[h],_=L.style[v],~(""+v).indexOf("-")&&(v=U(v)),L.style[v]!==S){if(m||void 0===u)return f(),"pfx"!=d||v;try{L.style[v]=u}catch(e){}if(L.style[v]!=_)return f(),"pfx"!=d||v}f()}else{var w=(e+" "+P.join(s+" ")+s).split(" "),b=t,x=n;for(a in w)if(w[a]in b)if(!1===x)return w[a];else{i=b[w[a]];if(E(i,"function")){var M=i;var z=x||b;return function(){return M.apply(z,arguments)};return}else return i}}return!1}function F(e,t,n){return r(e,S,S,t,n)}var $=[],o=[],e={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var n=this;setTimeout(function(){t(n[e])},0)},addTest:function(e,t,n){o.push({name:e,fn:t,options:n})},addAsyncTest:function(e){o.push({name:null,fn:e})}},n=function(){},s=(n.prototype=e,(n=new n).addTest("cookies",function(){try{d.cookie="cookietest=1";var e=-1!=d.cookie.indexOf("cookietest=");return d.cookie="cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT",e}catch(e){return!1}}),n.addTest("localstorage",function(){var e="modernizr";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}}),n.addTest("sessionstorage",function(){var e="modernizr";try{return sessionStorage.setItem(e,e),sessionStorage.removeItem(e),!0}catch(e){return!1}}),n.addTest("cors","XMLHttpRequest"in a&&"withCredentials"in new XMLHttpRequest),n.addTest("history",function(){var e=navigator.userAgent;return(-1===e.indexOf("Android 2.")&&-1===e.indexOf("Android 4.0")||-1===e.indexOf("Mobile Safari")||-1!==e.indexOf("Chrome")||-1!==e.indexOf("Windows Phone")||"file:"===location.protocol)&&a.history&&"pushState"in a.history}),e._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""]),u=(e._prefixes=s,d.documentElement),m="svg"===u.nodeName.toLowerCase();if(!m){var t=void 0!==a?a:this,l=d;function I(e,t){var n=e.createElement("p"),e=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",e.insertBefore(n.lastChild,e.firstChild)}function f(){var e=y.elements;return"string"==typeof e?e.split(" "):e}function p(e){var t=X[e[G]];return t||(t={},v++,e[G]=v,X[v]=t),t}function W(e,t,n){return t=t||l,h?t.createElement(e):!(t=(n=n||p(t)).cache[e]?n.cache[e].cloneNode():V.test(e)?(n.cache[e]=n.createElem(e)).cloneNode():n.createElem(e)).canHaveChildren||J.test(e)||t.tagUrn?t:n.frag.appendChild(t)}function i(e){var t,n,r=p(e=e||l);return!y.shivCSS||c||r.hasCSS||(r.hasCSS=!!I(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),h||(t=e,(n=r).cache||(n.cache={},n.createElem=t.createElement,n.createFrag=t.createDocumentFragment,n.frag=n.createFrag()),t.createElement=function(e){return y.shivMethods?W(e,t,n):n.createElem(e)},t.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+f().join().replace(/[\w\-:]+/g,function(e){return n.createElem(e),n.frag.createElement(e),'c("'+e+'")'})+");return n}")(y,n.frag)),e}function H(e){for(var t,n=e.getElementsByTagName("*"),r=n.length,o=RegExp("^(?:"+f().join("|")+")$","i"),i=[];r--;)t=n[r],o.test(t.nodeName)&&i.push(t.applyElement(function(e){for(var t,n=e.attributes,r=n.length,o=e.ownerDocument.createElement(w+":"+e.nodeName);r--;)(t=n[r]).specified&&o.setAttribute(t.nodeName,t.nodeValue);return o.style.cssText=e.style.cssText,o}(t)));return i}function B(s){function l(){clearTimeout(n._removeSheetTimer),c&&c.removeNode(!0),c=null}var c,d,n=p(s),e=s.namespaces,t=s.parentWindow;return!K||s.printShived||(void 0===e[w]&&e.add(w),t.attachEvent("onbeforeprint",function(){l();for(var e,t,n,r=s.styleSheets,o=[],i=r.length,a=Array(i);i--;)a[i]=r[i];for(;n=a.pop();)if(!n.disabled&&Z.test(n.media)){try{t=(e=n.imports).length}catch(e){t=0}for(i=0;i<t;i++)a.push(e[i]);try{o.push(n.cssText)}catch(e){}}o=function(e){for(var t,n=e.split("{"),r=n.length,o=RegExp("(^|[\\s,>+~])("+f().join("|")+")(?=[[\\s,>+~#.:]|$)","gi"),i="$1"+w+"\\:$2";r--;)(t=n[r]=n[r].split("}"))[t.length-1]=t[t.length-1].replace(o,i),n[r]=t.join("}");return n.join("{")}(o.reverse().join("")),d=H(s),c=I(s,o)}),t.attachEvent("onafterprint",function(){for(var e=d,t=e.length;t--;)e[t].removeNode();clearTimeout(n._removeSheetTimer),n._removeSheetTimer=setTimeout(l,500)}),s.printShived=!0),s}var c,h,g=t.html5||{},J=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,V=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,G="_html5shiv",v=0,X={};try{var _=l.createElement("a");_.innerHTML="<xyz></xyz>",c="hidden"in _,h=1==_.childNodes.length||(l.createElement("a"),void 0===(O=l.createDocumentFragment()).cloneNode)||void 0===O.createDocumentFragment||void 0===O.createElement}catch(e){h=c=!0}var y={elements:g.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:"3.7.3",shivCSS:!1!==g.shivCSS,supportsUnknownElements:h,shivMethods:!1!==g.shivMethods,type:"default",shivDocument:i,createElement:W,createDocumentFragment:function(e,t){if(e=e||l,h)return e.createDocumentFragment();for(var n=(t=t||p(e)).frag.cloneNode(),r=0,o=f(),i=o.length;r<i;r++)n.createElement(o[r]);return n},addElements:function(e,t){var n=y.elements;"string"!=typeof n&&(n=n.join(" ")),"string"!=typeof e&&(e=e.join(" ")),y.elements=n+" "+e,i(t)}},Z=(t.html5=y,i(l),/^$|\b(?:all|print)\b/),w="html5shiv",K=!(h||(_=l.documentElement,void 0===l.namespaces)||void 0===l.parentWindow||void 0===_.applyElement||void 0===_.removeNode||void 0===t.attachEvent);y.type+=" print",(y.shivPrint=B)(l),"object"==typeof module&&module.exports&&(module.exports=y)}n.addTest("csspositionsticky",function(){var e="position:",t=T("a").style;return t.cssText=e+s.join("sticky;"+e).slice(0,-e.length),-1!==t.position.indexOf("sticky")});function Q(e){var t,n=s.length,r=a.CSSRule;if(void 0===r)return S;if(e){if((t=(e=e.replace(/^@/,"")).replace(/-/g,"_").toUpperCase()+"_RULE")in r)return"@"+e;for(var o=0;o<n;o++){var i=s[o];if(i.toUpperCase()+"_"+t in r)return"@-"+i.toLowerCase()+"-"+e}}return!1}Y=!("onblur"in d.documentElement);var Y,b,x,M,z,C,N,j,ee,k,A,te=function(e,t){var n;return!!e&&(!(n=(e="on"+e)in(t=t&&"string"!=typeof t?t:T(t||"div")))&&Y&&((t=t.setAttribute?t:T("div")).setAttribute(e,""),n="function"==typeof t[e],t[e]!==S&&(t[e]=S),t.removeAttribute(e)),n)},ne=(e.hasEvent=te,e.testStyles=R),O=(n.addTest("touchevents",function(){var t,e;return"ontouchstart"in a||a.DocumentTouch&&d instanceof DocumentTouch?t=!0:(e=["@media (",s.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join(""),ne(e,function(e){t=9===e.offsetTop})),t}),"Moz O ms Webkit"),P=e._config.usePrefixes?O.toLowerCase().split(" "):[],re=(e._domPrefixes=P,n.addTest("pointerevents",function(){for(var e=!1,t=P.length,e=n.hasEvent("pointerdown");t--&&!e;)te(P[t]+"pointerdown")&&(e=!0);return e}),e._config.usePrefixes?O.split(" "):[]),oe=(e._cssomPrefixes=re,e.atRule=Q,{elem:T("modernizr")}),L=(n._q.push(function(){delete oe.elem}),{style:oe.elem.style}),g=(n._q.unshift(function(){delete L.style}),e.testAllProps=r,e.prefixed=function(e,t,n){return 0===e.indexOf("@")?Q(e):(-1!=e.indexOf("-")&&(e=U(e)),t?r(e,t,n):r(e,"pfx"))});for(j in n.addTest("matchmedia",!!g("matchMedia",a)),e.testAllProps=F,n.addTest("flexwrap",F("flexWrap","wrap",!0)),o)if(o.hasOwnProperty(j)){if(b=[],(x=o[j]).name&&(b.push(x.name.toLowerCase()),x.options)&&x.options.aliases&&x.options.aliases.length)for(M=0;M<x.options.aliases.length;M++)b.push(x.options.aliases[M].toLowerCase());for(z=E(x.fn,"function")?x.fn():x.fn,C=0;C<b.length;C++)1===(N=b[C].split(".")).length?n[N[0]]=z:(!n[N[0]]||n[N[0]]instanceof Boolean||(n[N[0]]=new Boolean(n[N[0]])),n[N[0]][N[1]]=z),$.push((z?"":"no-")+N.join("-"))}t=$,k=u.className,A=n._config.classPrefix||"",m&&(k=k.baseVal),n._config.enableJSClass&&(ee=new RegExp("(^|\\s)"+A+"no-js(\\s|$)"),k=k.replace(ee,"$1"+A+"js$2")),n._config.enableClasses&&(k+=" "+A+t.join(" "+A),m?u.className.baseVal=k:u.className=k),delete e.addTest,delete e.addAsyncTest;for(var ie=0;ie<n._q.length;ie++)n._q[ie]();a.Modernizr=n}(window,document),Modernizr.viewport_width=Math.max(document.documentElement.clientWidth,window.innerWidth||0),Modernizr.viewport_height=Math.max(document.documentElement.clientHeight,window.innerHeight||0),Modernizr.narrow=Modernizr.viewport_width<=704,Modernizr.constrained=Modernizr.viewport_width<=1200,Modernizr.site_menu=Modernizr.viewport_width<=1020?"button":"nav_bar",Modernizr.touch=Modernizr.touchevents||Modernizr.pointerevents&&(0<navigator.MaxTouchPoints||0<navigator.msMaxTouchPoints),Modernizr.phone=Modernizr.narrow&&Modernizr.touch,Modernizr.tablet=Modernizr.viewport_width<1075&&Modernizr.touch,Modernizr.desktop=!Modernizr.constrained&&!Modernizr.touch,Modernizr.laptop=!(Modernizr.desktop||Modernizr.tablet||Modernizr.phone),new RegExp("hideallads")),sr_html=(Modernizr.adfree=patt.test(window.location.href),document.querySelector("html")),cn=sr_html.className,sr_host_parts=(Modernizr.phone?sr_html.className=cn.concat(" phone"):Modernizr.tablet?sr_html.className=cn.concat(" tablet"):(Modernizr.desktop||Modernizr.laptop)&&(sr_html.className=cn.concat(" desktop")),window.location.hostname.split(".")),cn=sr_html.className,sr_logger=(Modernizr.is_build=Modernizr.is_live=Modernizr.is_dev=!1,"www"===sr_host_parts[0]||"fbref"===sr_host_parts[0]?(Modernizr.is_live=!0,sr_html.className=cn.concat(" is_live")):sr_host_parts[0].startsWith("b")?(Modernizr.is_build=!0,sr_html.className=cn.concat(" is_build")):(sr_host_parts[0].startsWith("d")||sr_host_parts[0].startsWith("r"))&&(Modernizr.is_dev=!0,sr_html.className=cn.concat(" is_dev")),Modernizr.is_stathead=!1,("stathead"===sr_host_parts[1]&&"srdevel"===sr_host_parts[2]||"stathead"===sr_host_parts[0]||"www"===sr_host_parts[0]&&"stathead"===sr_host_parts[1])&&(cn=sr_html.className,sr_html.className=cn.concat(" is_stathead"),Modernizr.is_stathead=!0),function(){var e=null,t={enableLogger:function(){null!=e&&(window.console.log=e)},disableLogger:function(){e=console.log,window.console.log=function(){}}};return t}()),sr_utilities_js_loader=(!document.srdev&&sr_is_production&&sr_logger.disableLogger(),Modernizr.is_modern=1,Modernizr.lang=document.lang||"",Modernizr.srdev=document.srdev,[]);function vjs_readCookie(e){for(var t=e+"=",n=document.cookie.split(";"),r=0;r<n.length;r++){for(var o=n[r];" "===o.charAt(0);)o=o.substring(1,o.length);if(0===o.indexOf(t))return decodeURIComponent(o.substring(t.length,o.length))}return null}function vjs_createCookie(e,t,n){var r,o="",o=n?((r=new Date).setTime(r.getTime()+24*n*60*60*1e3),"; expires="+r.toGMTString()):"",n=encodeURIComponent(e)+"="+encodeURIComponent(t)+o+"; path=/";document.cookie=n}!function(o){function e(e,t){"use strict";var n=o.document.getElementsByTagName("script")[0],r=o.document.createElement("script");return r.src=e,r.async=!0,n.parentNode.insertBefore(r,n),t&&"function"==typeof t&&(r.onload=t),r}"undefined"!=typeof module?module.exports=e:o.loadJS=e}("undefined"!=typeof global?global:this),String.prototype.vjs_isMatch=function(e){return null!==this.match(e)};var sr_time_begin=new Date,sr_perf_startTime=new Date,sr_perf_log="<strong>Performance:</strong>",sr_perf_lastTime=new Date;function vjs_ready(e){"loading"!=document.readyState?e():document.addEventListener("DOMContentLoaded",e)}
+</script>
+<script>
+var _sr_modern_url = ''.concat(document.srdev?'https://cdn.ssref.net/nocdn/dev/'.concat(document.srdev.substring(0, 2)):"https://cdn.ssref.net/req/202303021",
+                               "/js/pfr", "/sr",document.srdev?"":"-min",   			       ".js");
+loadJS( _sr_modern_url, function() { vjs_ready(sr_fire_js); });
+</script>
+<!-- JS END -->
+
+
+<!-- include:end  ="/inc/klecko_header_full_pfr.html_f" -->
+
+
+
+    <meta name="revised" content="07:27:43 14-Mar-2023" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="generated-by"     content="/home/pfr/deploy/www/teams/tgl.fcgi" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#384d42" />
+    <meta name="msapplication-navbutton-color" content="#384d42" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#384d42" />
+    
+
+
+
+
+    <!-- HeaderSeoSocial -->
+    <meta name="keywords" content="">
+    <meta itemprop="url"           content="https://www.pro-football-reference.com">
+    <meta itemprop="name"          content="Pro Football Reference">
+    <meta itemprop="alternateName" content="PFRef">
+    <meta property="fb:app_id"     content="">
+    <meta property="og:url"          content="https://www.pro-football-reference.com/teams/kan/2017/gamelog/">
+    <meta property="og:title"        content="Kansas City Chiefs 2017 Games and Schedule | Pro-Football-Reference.com">
+    <meta property="og:site_name"    content="Pro-Football-Reference.com">
+    <meta property="og:type"         content="    Team" />
+    <meta property="og:description"  content="Kansas City Chiefs 2017 Games and Schedule">
+    <meta property="og:image"        content="http://cdn.ssref.net/scripts/image_resize.cgi?min=200&url=https://cdn.ssref.net/req/202303071/tlogo/pfr/kan-2017.png">
+    <meta name="twitter:card"         content="summary">
+    <meta name="twitter:site"         content="@pfref">
+    <meta name="twitter:creator"      content="@pfref">
+    <meta property="twitter:image"    content="http://cdn.ssref.net/scripts/image_resize.cgi?min=200&url=https://cdn.ssref.net/req/202303071/tlogo/pfr/kan-2017.png">
+    <meta name="twitter:domain"       content="Pro-Football-Reference.com">
+    <meta name="referrer" content="unsafe-url">
+    <!-- HeaderSeoSocial:END -->
+
+    <!-- tiles, touch, favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-180x180-precomposed.png">
+    <link rel="icon"                         sizes="48x48"   href="https://cdn.ssref.net/req/202303021/favicons/pfr/favicon-48.png">
+    <link rel="shortcut icon"                sizes="228x228" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-228x228-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="228x228" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-228x228-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="195x195" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-195x195-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="180x180" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-180x180-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="152x152" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="144x144" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="128x128" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-128x128-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="120x120" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="114x114" href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="76x76"   href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="72x72"   href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="57x57"   href="https://cdn.ssref.net/req/202303021/favicons/pfr/apple-touch-icon-57x57-precomposed.png">
+    <link rel="icon"                         sizes="32x32"   href="https://cdn.ssref.net/req/202303021/favicons/pfr/favicon-32.png">
+    <!--[if IE]>
+    <link rel="shortcut icon"                                href="https://cdn.ssref.net/req/202303021/favicons/pfr/favicon.ico"><![endif]-->
+    <meta name="msapplication-TileColor" content="#005629" />
+    <meta name="msapplication-TileImage" content="https://cdn.ssref.net/req/202303021/favicons/pfr/ms-tile-144.png" />
+    <link rel=search        type="application/opensearchdescription+xml" href="https://cdn.ssref.net/req/202303021/opensearch/opensearch-pfr.xml" title=" Player and Team Search">
+    <!-- tiles, touch, favicons:end -->
+
+<!-- ad code: begin -->
+
+
+    <link rel="preconnect" href="https://a.pub.network/" crossorigin />
+    <link rel="preconnect" href="https://b.pub.network/" crossorigin />
+    <link rel="preconnect" href="https://c.pub.network/" crossorigin />
+    <link rel="preconnect" href="https://d.pub.network/" crossorigin />
+    <link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+    <link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+    <link rel="preconnect" href="https://btloader.com/" crossorigin />
+    <link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+    <link rel="preconnect" href="https://confiant-integrations.global.ssl.fastly.net" crossorigin />
+<script data-ad-client="ca-pub-5319453360923253" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<link rel="stylesheet" href="https://a.pub.network/pro-football-reference/cls.css" type="text/css">
+<script>
+    var freestar = freestar || {};
+    freestar.config = freestar.config || {};
+    freestar.config.enabled_slots = [ "div-gpt-ad-300x250-ATF","div-gpt-ad-728x90-ATF","div-gpt-ad-728x90-GeneralHeader","div-gpt-ad-728x90-Footer" ];
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree || document.getElementById('sr_suppress_ads') || Modernizr.viewport_width < 1810) {
+    // do not include the rails
+    }
+    else {
+         freestar.config.enabled_slots.push('div-gpt-ad-160x600-1');
+         freestar.config.enabled_slots.push('div-gpt-ad-160x600-2');
+    } 
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+    var fs_debug = window.location.search.indexOf('fsdebug') == -1 ? false : true;
+    freestar.hitTime = Date.now();
+    freestar.queue = freestar.queue || [];
+    freestar.config = freestar.config || {};
+    freestar.queue.push(function() {
+      // Include the line reflecting the area/section of the site you are on
+      googletag.pubads().setTargeting('sr_site_id', 'pfr');
+    });
+!function(a,b){
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+        return;
+    }  
+    var c=b.getElementsByTagName("script")[0],
+    d=b.createElement("script"),
+    e="https://a.pub.network/pro-football-reference";
+    e+=fs_debug?"/qa/pubfig.min.js":"/pubfig.min.js",
+    d.async=!0,
+    d.src=e,
+    c.parentNode.insertBefore(d,c)
+}(window,document);
+</script>
+
+
+<!-- ad code:end -->
+
+
+</head>
+<body class="pfr">
+<div id="wrap">
+  
+  <div id="header" role="banner">
+  
+<ul id="subnav" class="notranslate">
+	<li><a href="https://www.sports-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav"><svg height="15px" width="20px"><use xlink:href="#ic-sr-pennant"></use></svg> Sports&nbsp;Reference&#8239;&reg;</a></li>
+	<li><a href="https://www.baseball-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Baseball</a></li>
+	<li class="current"><a href="https://www.pro-football-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Football</a> <a href="https://www.sports-reference.com/cfb/">(college)</a></li>
+	<li><a href="https://www.basketball-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Basketball</a> <a href="https://www.sports-reference.com/cbb/">(college)</a></li>
+	<li><a href="https://www.hockey-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Hockey</a></li>
+
+
+	
+	
+	
+	<li><a href="https://fbref.com/fr/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Football</a></li>
+
+	<li><a href="https://www.sports-reference.com/blog/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Blog</a></li>
+
+    <li><a href="https://stathead.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Stathead&#8239;&reg;</a></li>
+
+	<li><a href="https://www.sports-reference.com/feedback/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Questions or Comments?</a></li>
+	<li class="user logged_in">Welcome <span class="username"></span>&nbsp;&#183;&nbsp;<a href="https://stathead.com/profile/?utm_source=pfr&amp;utm_medium=sr_xsite&amp;utm_campaign=2023_01_srnav_account">Your Account</a></li>
+<li class="user logged_in"><a class="logout" onclick="sr_auth_logout_page_elements();if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/profile/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" onclick="if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/users/login.cgi?token=1">Login</a></li>
+<li class="user not_logged_in"><a href="https://stathead.com/users/signup.cgi">Create Account</a></li>
+
+</ul>
+
+  <a href="/"><img src="https://cdn.ssref.net/req/202303021/logos/pfr-logo.svg" onerror="this.src='https://cdn.ssref.net/req/202303021/logos/pfr-logo.png'; this.onerror = null;" alt="Pro-Football-Reference.com Logo &amp; Link to home page" /></a>
+<div id="nav_trigger" role="button"><a href="#site_menu_link">MENU</a></div>
+<div id="nav" role="navigation" aria-label="Pro-Football-Reference.com sections">
+	<ul id="main_nav" class="hoversmooth nohover">	        <li id="header_players" ><a href="/players">Players</a></li>
+		<li id="header_teams" class="current"><a href="/teams/">Teams</a></li>
+		<li id="header_years" ><a href="/years/">Seasons</a></li>
+		<li id="header_leaders" ><a href="/leaders/">Leaders</a></li>
+		<li id="header_scores" ><a href="/boxscores/">NFL Scores</a></li>
+		
+		<li id="header_draft" class=""><a href="/draft/">Draft</a></li>	
+		
+		<li id="header_playindex" class=""><a href="https://stathead.com/sport/football/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_topnav_stathead&utm_content=lnk_top">Stathead</a></li>
+		<li><a href="https://www.pro-football-reference.com/email/">Newsletter</a></li>
+		
+		<li><a data-scroll href="#site_menu_link" class="opener">Full Site Menu Below</a></li>
+	</ul>
+	<div class="breadcrumbs">You are here: <div itemscope itemtype="https://schema.org/BreadcrumbList" class="crumbs"><span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/"><span itemprop="name">PFR Home Page</span></a> <meta itemprop="position" content="1" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/teams/"><span itemprop="name">Teams</span></a> <meta itemprop="position" content="2" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/teams/kan/"><span itemprop="name">Kansas City Chiefs</span></a> <meta itemprop="position" content="3" /></span> &gt; <strong>2017 Games and Schedule</strong></div></div>
+	<ul class="usertools bullets-inline"><li class="user logged_in">Welcome <span class="username"></span>&nbsp;&#183;&nbsp;<a href="https://stathead.com/profile/?utm_source=pfr&amp;utm_medium=sr_xsite&amp;utm_campaign=2023_01_srnav_account">Your Account</a></li>
+<li class="user logged_in"><a class="logout" onclick="sr_auth_logout_page_elements();if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/profile/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" onclick="if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/users/login.cgi?token=1">Login</a></li>
+<li class="user not_logged_in"><a href="https://stathead.com/users/signup.cgi">Create Account</a></li>
+	</ul><!-- ul.user -->
+</div><!-- div#nav -->
+<script>
+function sr_menus_setupMainNav_button_inline () {
+    if (sr_detect_operaMini || !("classList" in document.createElement("_"))) {
+	return false;
+    }
+    var nav_trigger = document.getElementById('nav_trigger');
+    if(!nav_trigger || nav_trigger.triggered) {
+	return false;
+    }
+    nav_trigger.triggered = true;
+    var nav = document.getElementById('nav');
+    var nav_trigger_a = nav_trigger.querySelector('a');
+    if (nav_trigger_a) {
+	nav_trigger_a.setAttribute('href','javascript:void(0)');
+	nav_trigger.onclick = function (event) {
+	    nav.classList.toggle('open');
+	    var is_open = nav.classList.contains('open');
+	    if (is_open) {
+		nav_trigger.classList.add('open');
+	    }
+	    else {
+		nav_trigger.classList.remove('open');
+	    }
+	    event.preventDefault();
+	    try { sr_record_analytics_event('MainNavButtonClick_inline',sr_record_directory(),sr_record_page());}
+	    catch(err) {}
+	};
+    }
+    return true;
+}
+sr_menus_setupMainNav_button_inline();
+</script><div class="search" role="search" aria-label="Site Search for players, teams and sections">
+<form method="get" name="f_big"  action="/search/search.fcgi">
+<div class="ac-outline">
+  <div class="ac-wrapper"><input type="search" tabindex="-1" class="ac-hint" name="hint" placeholder="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" dir="auto" aria-label="Search suggestions based on user search input">
+
+<input tabindex="1" type="search" class="ac-input completely" name="search" placeholder="Enter Person, Team, Section, etc" aria-label="Enter a player, team or section name" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" dir="auto" />
+    <div class="ac-dropdown"></div>
+  </div>
+</div>
+
+<input type="submit" value="Search" tabindex="2" />
+<input type="hidden" name="pid" value="" data-search-id>
+<input type="hidden" name="idx" value="" data-search-idx>
+
+</form>
+</div><!-- div.search -->
+
+</div><!-- div#header -->
+
+  <style>
+  .site_announcement {
+    background-color: #fffea6;
+    text-align: center;
+    padding: .4em 0;
+    width: 100%;
+  }
+  .site_announcement div {
+    margin: 0 .3em;
+  }
+  .site_announcement span {
+    white-space: nowrap;
+  }
+  @media only screen and (max-width: 1000px) {
+    .site_annoucement_extra {
+      display: none;
+    }
+  }
+  </style>
+
+
+
+
+<div id="info" class="teams">
+	
+	  <div id="meta">
+	
+
+
+
+	<div class="media-item logo loader">
+		<img class="teamlogo"			src="https://cdn.ssref.net/req/202303071/tlogo/pfr/kan-2017.png"
+			alt="2017 Kansas City Chiefs Logo">
+		
+			<p><a href="http://www.sportslogos.net/">via Sports Logos.net</a></p>
+			<p><a href="https://www.sports-reference.com/blog/2016/06/redesign-team-and-league-logos-courtesy-sportslogos-net/">About logos</a></p>
+		 
+	</div>
+
+
+
+<div data-template="Partials/Teams/Summary">
+  <h1>
+    
+      <span>2017</span>
+      <span>Kansas City Chiefs</span>
+          
+    <span class="header_end">Game Log</span>
+  </h1>
+  <div class="prevnext">
+  
+  <a href="/teams/kan/2016/gamelog/" class="button2 prev">Previous Season</a>
+  
+  
+  <a href="/teams/kan/2018/gamelog/" class="button2 next">Next Season</a>
+  
+</div>
+
+
+<p>
+  <strong>Record:</strong> 10-6-0, 1st in
+	<a href="/years/2017">AFC West Division</a>
+  &nbsp;(<a href="/teams/kan/2017_games.htm">Schedule and Results</a>)
+</p>
+
+
+
+
+<p><strong>Coach:</strong> 
+ <a href="/coaches/ReidAn0.htm">Andy Reid</a> (10-6-0)</p>
+
+
+<p><strong>Points For:</strong> 415 (25.9/g) 6th of 32</p>
+<p><strong>Points Against:</strong> 339 (21.2/g) 15th of 32</p>
+<p><strong><a href="/about/glossary.htm#expwl" class="tooltip" tip="The expected wins given their points scored and allowed">Expected W-L</a>:</strong> 9.9-6.1</p>
+<p><a href="/about/glossary.htm#srs"><strong>SRS</strong></a>: 3.42 (11th of 32),&nbsp;
+  <a href="/about/glossary.htm#sos"><strong>SOS</strong></a>: -1.33
+</p>
+
+
+<p><strong>Playoffs:</strong><br /><a href="/boxscores/201801060kan.htm">Lost Wild Card 21-22</a> vs. <a href="/teams/oti/2017.htm">Tennessee Titans</a><br /></p>
+
+
+	
+	<p><strong>Offensive Coordinator:</strong> <a href="/coaches/NagyMa0.htm">Matt Nagy</a></p>
+	
+	
+	<p><strong>Defensive Coordinator:</strong> <a href="/coaches/SuttBo0.htm">Bob Sutton</a></p>
+	
+
+
+	<p><strong>Other Notable Asst.:</strong> <a href="/coaches/BienEr0.htm">Eric Bieniemy</a> (Running Backs), <a href="/coaches/ChilBr0.htm">Brad Childress</a> (Assistant Head Coach), <a href="/coaches/GibbGa0.htm">Gary Gibbs</a> (Linebackers), <a href="/coaches/KafkMi0.htm">Mike Kafka</a> (Off. Quality Control) and <a href="/coaches/ThomEm0.htm">Emmitt Thomas</a> (Defensive Backs)
+
+
+<p><strong>Stadium:</strong> <a href="/stadiums/KAN00.htm">Arrowhead Stadium</a></p>
+
+
+	
+
+
+
+	
+	
+	<p><strong>Offensive Scheme:</strong> West Coast</p>
+	
+	
+	<p><strong>Defensive Alignment:</strong> 3-4</p>
+	
+	
+
+
+	<p><strong>Preseason Odds:</strong> <a href="/years/2017/preseason_odds.htm">Super Bowl +2500; O/U: 9.0</a></p>
+
+
+	<p><strong>Training Camp:</strong> <a href="/years/2017/training-camps.htm">Missouri Western State (St. Joseph, Missouri)</a> </p>
+
+
+
+
+
+
+
+
+<button id="meta_more_button" class="opener" data-type="hide_after" data-class="open" data-id="info">More Team Info</button>
+<script>
+// see sr.menus.js:sr_menus_checkInfoCookie to explain
+function sr_menus_checkInfoCookie_inline(browserType) {
+    var el_info = document.getElementById('info');
+    var el_button = document.getElementById('meta_more_button');
+    var bling_len = 0;    
+    if (!el_button || !el_info || !el_info.classList) { console.log('no meta_button'); return; }
+    var el = el_button;
+    var siblingsHidden = 0;
+    while (el = el.previousSibling) { if ((el.nodeType === 1) && (el.offsetWidth <= 0 || el.offsetHeight <= 0)) { siblingsHidden++; } }
+    var button_cookie = false;
+    if (browserType === 'desktop') {  button_cookie = vjs_readCookie('meta_more_button');   }
+    // We allow up to four of bling lines or additional player bio data entries in mobile.
+    if (el_info && el_button && (button_cookie || (siblingsHidden + bling_len <= 4))) {el_button.parentNode.removeChild(el_button);	el_info.classList.add('open');  }
+    else { el_button.classList.add('show');  }
+}
+if (Modernizr.desktop || Modernizr.laptop) { sr_menus_checkInfoCookie_inline('desktop'); } else { sr_menus_checkInfoCookie_inline('mobile'); }
+var sr_menus_checkInfoCookie_run_inline = true;
+</script>
+
+
+</div>
+</div><!-- div#meta -->
+
+
+	
+		
+	
+<div class="adblock ad300">
+
+<!-- div#fs_fs_300_atf  -->
+<div align="center" id="div-gpt-ad-300x250-ATF"  data-freestar-ad="__336x280">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-300x250-ATF');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-300x250-ATF'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_300_atf -->
+
+
+</div>
+
+
+</div>
+<div id="srcom">
+<div class="adblock ad728">
+
+<!-- div#fs_fs_728_atf  -->
+<!-- sf:blank by design for send to news ad -->
+<!-- /div.#fs_fs_728_atf -->
+
+
+</div>
+
+
+
+
+</div><!-- div#srcom -->
+
+<div id="inner_nav" role="navigation" aria-label="Sections on this page and/or other pages related to this page" class=" inactive">
+	<ul class="hoversmooth">
+		<li			class="full "><a href="/teams/kan">Franchise Encyclopedia</a>		</li>
+		<li			class="condensed index "><a href="/teams/kan">Chiefs Franchise Pages</a>		</li>
+		<li			class="index "><a href="/teams/kan/2017.htm">2017 Chiefs Statistics</a>		</li>
+		<li			class="full "><a href="/teams/kan/2017_roster.htm">Roster &amp; Players</a>		</li>
+		<li			class="full current "><a href="/teams/kan/2017/gamelog/">Games &amp; Schedule</a>		</li>
+		<li			class="full "><a href="/teams/kan/2017_draft.htm">Team Draftees</a>		</li>
+		<li			class="full "><a href="/teams/kan/2017_injuries.htm">Injury Report</a>		</li>
+		<li data-fade-selector="#inpage_nav"			class="full hasmore "><a href="#">More</a>
+			<div>
+
+					<ul class="">
+						<li><a href="/teams/kan/2017_splits.htm" >Offensive Splits</a></li>
+						<li><a href="/teams/kan/2017_opp_splits.htm" >Defensive Splits</a></li>
+						<li><a href="/teams/kan/2017_travel.htm" >Travel Map</a></li>
+						<li><a href="/teams/kan/2017-snap-counts.htm" >Snap Counts</a></li>
+						<li><a href="/teams/kan/2017_lines.htm" >Vegas Lines</a></li>
+						<li><a href="/teams/kan/2017_trades.htm" >Trades</a></li>
+					</ul>
+
+			</div>		</li>
+		<li data-fade-selector="#inpage_nav"			class="condensed hasmore "><span>More 2017 Chiefs Pages</span>
+			<div>
+
+					<ul class=" in_list">
+						<li><a href="/teams/kan/2017.htm" >2017 Statistics</a></li>
+						<li><a href="/teams/kan/2017_roster.htm" >Roster &amp; Players</a></li>
+						<li><a href="/teams/kan/2017/gamelog/" >Games &amp; Schedule</a></li>
+						<li><a href="/teams/kan/2017_draft.htm" >Team Draftees</a></li>
+						<li><a href="/teams/kan/2017_injuries.htm" >Injury Report</a></li>
+						<li><a href="/teams/kan/2017_splits.htm" >Offensive Splits</a></li>
+						<li><a href="/teams/kan/2017_opp_splits.htm" >Defensive Splits</a></li>
+						<li><a href="/teams/kan/2017_travel.htm" >Travel Map</a></li>
+						<li><a href="/teams/kan/2017-snap-counts.htm" >Snap Counts</a></li>
+						<li><a href="/teams/kan/2017_lines.htm" >Vegas Lines</a></li>
+						<li><a href="/teams/kan/2017_trades.htm" >Trades</a></li>
+					</ul>
+
+			</div>		</li>
+	</ul>
+	    
+    
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+    
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+    
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+    
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+    
+    
+    
+    
+    
+    
+    
+        <div id="inpage_nav" class="html_built">
+            <p class="listhead inpage">On this page:</p>
+            <ul class="in_list inpage"><li><a href="#all_gamelog2017">Game Logs</a></li> <li><a href="#all_playoff_gamelog2017">Playoffs Game Logs</a></li> <li><a href="#all_gamelog_opp2017">Opponent Game Logs</a></li> <li><a href="#all_playoff_gamelog_opp2017">Opponent Playoffs Game Logs</a></li> <li><a href="#site_menu_link">Full Site Menu</a></li></ul>
+        </div>
+    
+</div><!-- div#inner_nav -->
+
+<div id="content" role="main">
+
+
+
+          
+      
+      
+      
+      
+
+<!-- fs_general_header -->
+<div class="adblock">
+
+
+<!-- div#fs_fs_general_header  -->
+<style>
+    #srcom .adblock.stn,
+    #content .adblock.stn { height: auto; width: 728px; max-width:100%; aspect-ratio: 1.677419;  margin: auto; }
+.fb #content .adblock.stn { max-width: 400px; }
+</style>
+<script>
+function apiFunction(ApiHandshake)  {
+    const playerDiv = document.querySelector('[data-stn-api="apiFunction"]');
+    const api = ApiHandshake(playerDiv);
+    new IntersectionObserver ( moes => { const bcr = moes.pop().boundingClientRect; api.float = bcr.y <= 0; },
+                                       { threshold: [0.9] }).observe(document.querySelector('[data-stn-api="apiFunction"]'));
+ }
+</script>
+<div class="adblock stn">
+  <div class='s2nPlayer k-PV0o3K0Y' data-type='float' data-stn-api="apiFunction"></div>
+  <script type='text/javascript' src='//embed.sendtonews.com/player3/embedcode.js?fk=PV0o3K0Y&cid=13629&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right' data-type='s2nScript'></script>
+</div>
+<!-- /div.#fs_fs_general_header -->
+
+
+</div>
+
+
+      
+         
+            
+<div id="all_gamelog2017" class="table_wrapper setup_long long">
+
+<div class="section_heading assoc_gamelog2017" id="gamelog2017_sh">
+  <span class="section_anchor" id="gamelog2017_link" data-label="Game Logs"></span><h2>Game Logs</h2>    <div class="section_heading_text">
+      <ul>
+      </ul>
+    </div>
+    		
+</div>
+<div class="table_container" id="div_gamelog2017">
+    
+    <table class="row_summable sortable stats_table" id="gamelog2017" data-cols-to-freeze="1,3">
+    <caption>Game Logs Table</caption>
+    
+
+   <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+   <thead>
+
+      
+      <tr class="over_header">
+         <th aria-label="" data-stat="" colspan="8" class=" over_header center" ></th>
+         <th aria-label="" data-stat="header_score" colspan="2" class=" over_header center" >Score</th>
+         <th aria-label="" data-stat="header_pass" colspan="11" class=" over_header center" >Passing</th>
+         <th aria-label="" data-stat="header_rush" colspan="4" class=" over_header center" >Rushing</th>
+         <th aria-label="" data-stat="header_scoring" colspan="4" class=" over_header center" >Scoring</th>
+         <th aria-label="" data-stat="header_punt" colspan="2" class=" over_header center" >Punting</th>
+         <th aria-label="" data-stat="header_downs" colspan="4" class=" over_header center" >Downs</th><th></th>
+      </tr>
+            
+      <tr>
+         <th aria-label="Week" data-stat="week_num" scope="col" class=" poptip sort_default_asc sorttable_nosort center" data-tip="Week number in season" >Week</th>
+         <th aria-label="Day" data-stat="game_day_of_week" scope="col" class=" poptip sort_default_asc left" >Day</th>
+         <th aria-label="Date" data-stat="game_date" scope="col" class=" poptip sort_default_asc center" >Date</th>
+         <th aria-label="" data-stat="boxscore_word" scope="col" class=" poptip sort_default_asc center" ></th>
+         <th aria-label="" data-stat="game_outcome" scope="col" class=" poptip center" ></th>
+         <th aria-label="OT" data-stat="overtime" scope="col" class=" poptip sort_default_asc left" >OT</th>
+         <th aria-label="" data-stat="game_location" scope="col" class=" poptip sort_default_asc center" ></th>
+         <th aria-label="Opp" data-stat="opp" scope="col" class=" poptip sort_default_asc center" >Opp</th>
+         <th aria-label="Tm" data-stat="pts_off" scope="col" class=" poptip center" data-tip="Points scored" data-over-header="Score" >Tm</th>
+         <th aria-label="Opp" data-stat="pts_def" scope="col" class=" poptip center" data-tip="Points allowed" data-over-header="Score" >Opp</th>
+         <th aria-label="Passes Completed" data-stat="pass_cmp" scope="col" class=" poptip center" data-tip="Passes completed" data-over-header="Passing" >Cmp</th>
+         <th aria-label="Pass Attempts" data-stat="pass_att" scope="col" class=" poptip center" data-tip="Passes attempted" data-over-header="Passing" >Att</th>
+         <th aria-label="Passing Yds" data-stat="pass_yds" scope="col" class=" poptip center" data-tip="Yards Gained by Passing<br>For teams, sack yardage is deducted from this total" data-over-header="Passing" >Yds</th>
+         <th aria-label="Passing TD" data-stat="pass_td" scope="col" class=" poptip center" data-tip="Passing Touchdowns" data-over-header="Passing" >TD</th>
+         <th aria-label="Passes Intercepted" data-stat="pass_int" scope="col" class=" poptip center" data-tip="Interceptions thrown" data-over-header="Passing" >Int</th>
+         <th aria-label="Sacked " data-stat="pass_sacked" scope="col" class=" poptip center" data-tip="Times Sacked (official since 1969, complete NFL coverage since 1963, partial NFL coverage from 1960-62)" data-over-header="Passing" >Sk</th>
+         <th aria-label="Sacked Yds Lost" data-stat="pass_sacked_yds" scope="col" class=" poptip center" data-tip="Yards lost due to sacks (official since 1969, complete NFL coverage since 1960)" data-over-header="Passing" >Yds</th>
+         <th aria-label="Yds/Pass Att" data-stat="pass_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Yards gained per pass attempt <br>Minimum 14 attempts per scheduled game to qualify as leader.<br>Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Yds/Pass Att" >Y/A</th>
+         <th aria-label="Net Yds/Pass Att" data-stat="pass_net_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Net Yards gained per pass attempt<br />(Passing Yards - Sack Yards) / (Passes Attempted + Times Sacked)<br />Minimum 14 attempts per schedule game to qualify as leader.<br />Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Net Yds/Pass Att" >NY/A</th>
+         <th aria-label="Pass Completion %" data-stat="pass_cmp_perc" scope="col" class=" poptip hide_non_quals center" data-tip="Percentage of Passes Completed<br>Minimum 14 attempts per scheduled game to qualify as leader.<br />Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Pass Completion %" >Cmp%</th>
+         <th aria-label="Passer Rating" data-stat="pass_rating" scope="col" class=" poptip hide_non_quals center" data-tip="Quarterback Rating, see glossary for details<br>Different ratings are used by the NFL and NCAA.<br />Minimum 1500 pass attempts to qualify as career leader, minimum 150 pass attempts for playoffs leader." data-over-header="Passing" data-filter="1" data-name="Passer Rating" >Rate</th>
+         <th aria-label="Rushing Att" data-stat="rush_att" scope="col" class=" poptip center" data-tip="Rushing Attempts (sacks not included in NFL)" data-over-header="Rushing" >Att</th>
+         <th aria-label="Rushing Yds" data-stat="rush_yds" scope="col" class=" poptip center" data-tip="Rushing Yards Gained (sack yardage is not included by NFL)" data-over-header="Rushing" >Yds</th>
+         <th aria-label="Yds/Rushing Att" data-stat="rush_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Rushing Yards per Attempt<br>Minimum 6.25 rushes per game scheduled to qualify as leader.<br />Minimum 750 rushes to qualify as career leader." data-over-header="Rushing" data-filter="1" data-name="Yds/Rushing Att" >Y/A</th>
+         <th aria-label="Rushing TD" data-stat="rush_td" scope="col" class=" poptip center" data-tip="Rushing Touchdowns" data-over-header="Rushing" >TD</th>
+         <th aria-label="Field Goals Made" data-stat="fgm" scope="col" class=" poptip center" data-tip="Field Goals Made" data-over-header="Scoring" >FGM</th>
+         <th aria-label="Field Goals Att" data-stat="fga" scope="col" class=" poptip center" data-tip="Field Goals Attempted" data-over-header="Scoring" >FGA</th>
+         <th aria-label="Extra Pt Made" data-stat="xpm" scope="col" class=" poptip center" data-tip="Extra Points Made" data-over-header="Scoring" >XPM</th>
+         <th aria-label="Extra Pt Att" data-stat="xpa" scope="col" class=" poptip center" data-tip="Extra Points Attempted" data-over-header="Scoring" >XPA</th>
+         <th aria-label="Punts" data-stat="punt" scope="col" class=" poptip center" data-tip="Times Punted" data-over-header="Punting" >Pnt</th>
+         <th aria-label="Punting Yds" data-stat="punt_yds" scope="col" class=" poptip center" data-tip="Total Punt Yardage" data-over-header="Punting" >Yds</th>
+         <th aria-label="3rd Down Conversions" data-stat="third_down_success" scope="col" class=" poptip center" data-tip="3rd Down Conversions in game" data-over-header="Downs" >3DConv</th>
+         <th aria-label="3rd Down Attempts" data-stat="third_down_att" scope="col" class=" poptip center" data-tip="3rd Down Attempts in game" data-over-header="Downs" >3DAtt</th>
+         <th aria-label="4th Down Conversions" data-stat="fourth_down_success" scope="col" class=" poptip center" data-tip="4th Down Conversions in game" data-over-header="Downs" >4DConv</th>
+         <th aria-label="4th Down Attempts" data-stat="fourth_down_att" scope="col" class=" poptip center" data-tip="4th Down Attempts in game" data-over-header="Downs" >4DAtt</th>
+         <th aria-label="Time of Possession" data-stat="time_of_poss" scope="col" class=" poptip center" data-tip="Offensive time of possesion" data-over-header="Tot Yds &amp; TO" >ToP</th>
+      </tr>
+      </thead>
+<tbody><tr id="gamelog2017.1" ><th scope="row" class="right " data-stat="week_num" csk="1" >1</th><td class="left " data-stat="game_day_of_week" >Thu</td><td class="left " data-stat="game_date" csk="2017-09-07" >September 7</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201709070nwe.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/nwe/2017.htm">New England Patriots</a></td><td class="right " data-stat="pts_off" >42</td><td class="right " data-stat="pts_def" >27</td><td class="right " data-stat="pass_cmp" >28</td><td class="right " data-stat="pass_att" >35</td><td class="right " data-stat="pass_yds" >352</td><td class="right " data-stat="pass_td" >4</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >3</td><td class="right " data-stat="pass_sacked_yds" >16</td><td class="right " data-stat="pass_yds_per_att" >10.5</td><td class="right " data-stat="pass_net_yds_per_att" >9.3</td><td class="right " data-stat="pass_cmp_perc" >80.0</td><td class="right " data-stat="pass_rating" >146.7</td><td class="right " data-stat="rush_att" >27</td><td class="right " data-stat="rush_yds" >185</td><td class="right " data-stat="rush_yds_per_att" >6.9</td><td class="right " data-stat="rush_td" >2</td><td class="right iz" data-stat="fgm" >0</td><td class="right iz" data-stat="fga" >0</td><td class="right " data-stat="xpm" >6</td><td class="right " data-stat="xpa" >6</td><td class="right " data-stat="punt" >6</td><td class="right " data-stat="punt_yds" >262</td><td class="right " data-stat="third_down_success" >4</td><td class="right " data-stat="third_down_att" >11</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >30:14</td></tr>
+<tr id="gamelog2017.2" ><th scope="row" class="right " data-stat="week_num" csk="2" >2</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-09-17" >September 17</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201709170kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/phi/2017.htm">Philadelphia Eagles</a></td><td class="right " data-stat="pts_off" >27</td><td class="right " data-stat="pts_def" >20</td><td class="right " data-stat="pass_cmp" >21</td><td class="right " data-stat="pass_att" >28</td><td class="right " data-stat="pass_yds" >232</td><td class="right " data-stat="pass_td" >1</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >4</td><td class="right " data-stat="pass_sacked_yds" >19</td><td class="right " data-stat="pass_yds_per_att" >9.0</td><td class="right " data-stat="pass_net_yds_per_att" >7.3</td><td class="right " data-stat="pass_cmp_perc" >75.0</td><td class="right " data-stat="pass_rating" >111.0</td><td class="right " data-stat="rush_att" >19</td><td class="right " data-stat="rush_yds" >112</td><td class="right " data-stat="rush_yds_per_att" >5.9</td><td class="right " data-stat="rush_td" >2</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >2</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >227</td><td class="right " data-stat="third_down_success" >5</td><td class="right " data-stat="third_down_att" >12</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >29:11</td></tr>
+<tr id="gamelog2017.3" ><th scope="row" class="right " data-stat="week_num" csk="3" >3</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-09-24" >September 24</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201709240sdg.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/sdg/2017.htm">Los Angeles Chargers</a></td><td class="right " data-stat="pts_off" >24</td><td class="right " data-stat="pts_def" >10</td><td class="right " data-stat="pass_cmp" >16</td><td class="right " data-stat="pass_att" >21</td><td class="right " data-stat="pass_yds" >122</td><td class="right " data-stat="pass_td" >2</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >5</td><td class="right " data-stat="pass_sacked_yds" >33</td><td class="right " data-stat="pass_yds_per_att" >7.4</td><td class="right " data-stat="pass_net_yds_per_att" >4.7</td><td class="right " data-stat="pass_cmp_perc" >76.2</td><td class="right " data-stat="pass_rating" >121.5</td><td class="right " data-stat="rush_att" >25</td><td class="right " data-stat="rush_yds" >189</td><td class="right " data-stat="rush_yds_per_att" >7.6</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >1</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >249</td><td class="right " data-stat="third_down_success" >4</td><td class="right " data-stat="third_down_att" >12</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >30:26</td></tr>
+<tr id="gamelog2017.4" ><th scope="row" class="right " data-stat="week_num" csk="4" >4</th><td class="left " data-stat="game_day_of_week" >Mon</td><td class="left " data-stat="game_date" csk="2017-10-02" >October 2</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710020kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/was/2017.htm">Washington Redskins</a></td><td class="right " data-stat="pts_off" >29</td><td class="right " data-stat="pts_def" >20</td><td class="right " data-stat="pass_cmp" >27</td><td class="right " data-stat="pass_att" >37</td><td class="right " data-stat="pass_yds" >261</td><td class="right " data-stat="pass_td" >1</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >4</td><td class="right " data-stat="pass_sacked_yds" >32</td><td class="right " data-stat="pass_yds_per_att" >7.9</td><td class="right " data-stat="pass_net_yds_per_att" >6.4</td><td class="right " data-stat="pass_cmp_perc" >73.0</td><td class="right " data-stat="pass_rating" >101.3</td><td class="right " data-stat="rush_att" >31</td><td class="right " data-stat="rush_yds" >168</td><td class="right " data-stat="rush_yds_per_att" >5.4</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >3</td><td class="right " data-stat="fga" >4</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >3</td><td class="right " data-stat="punt_yds" >105</td><td class="right " data-stat="third_down_success" >8</td><td class="right " data-stat="third_down_att" >13</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >37:09</td></tr>
+<tr id="gamelog2017.5" ><th scope="row" class="right " data-stat="week_num" csk="5" >5</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-10-08" >October 8</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710080htx.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/htx/2017.htm">Houston Texans</a></td><td class="right " data-stat="pts_off" >42</td><td class="right " data-stat="pts_def" >34</td><td class="right " data-stat="pass_cmp" >29</td><td class="right " data-stat="pass_att" >37</td><td class="right " data-stat="pass_yds" >323</td><td class="right " data-stat="pass_td" >3</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >1</td><td class="right " data-stat="pass_sacked_yds" >1</td><td class="right " data-stat="pass_yds_per_att" >8.8</td><td class="right " data-stat="pass_net_yds_per_att" >8.5</td><td class="right " data-stat="pass_cmp_perc" >78.4</td><td class="right " data-stat="pass_rating" >130.1</td><td class="right " data-stat="rush_att" >35</td><td class="right " data-stat="rush_yds" >127</td><td class="right " data-stat="rush_yds_per_att" >3.6</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >5</td><td class="right " data-stat="fga" >5</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >2</td><td class="right " data-stat="punt_yds" >86</td><td class="right " data-stat="third_down_success" >9</td><td class="right " data-stat="third_down_att" >16</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >38:17</td></tr>
+<tr id="gamelog2017.6" ><th scope="row" class="right " data-stat="week_num" csk="6" >6</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-10-15" >October 15</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710150kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/pit/2017.htm">Pittsburgh Steelers</a></td><td class="right " data-stat="pts_off" >13</td><td class="right " data-stat="pts_def" >19</td><td class="right " data-stat="pass_cmp" >19</td><td class="right " data-stat="pass_att" >34</td><td class="right " data-stat="pass_yds" >223</td><td class="right " data-stat="pass_td" >1</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >3</td><td class="right " data-stat="pass_sacked_yds" >23</td><td class="right " data-stat="pass_yds_per_att" >7.2</td><td class="right " data-stat="pass_net_yds_per_att" >6.0</td><td class="right " data-stat="pass_cmp_perc" >55.9</td><td class="right " data-stat="pass_rating" >85.8</td><td class="right " data-stat="rush_att" >15</td><td class="right " data-stat="rush_yds" >28</td><td class="right " data-stat="rush_yds_per_att" >1.9</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >2</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >4</td><td class="right " data-stat="punt_yds" >190</td><td class="right " data-stat="third_down_success" >3</td><td class="right " data-stat="third_down_att" >11</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >2</td><td class="right " data-stat="time_of_poss" >23:21</td></tr>
+<tr id="gamelog2017.7" ><th scope="row" class="right " data-stat="week_num" csk="7" >7</th><td class="left " data-stat="game_day_of_week" >Thu</td><td class="left " data-stat="game_date" csk="2017-10-19" >October 19</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710190rai.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/rai/2017.htm">Oakland Raiders</a></td><td class="right " data-stat="pts_off" >30</td><td class="right " data-stat="pts_def" >31</td><td class="right " data-stat="pass_cmp" >25</td><td class="right " data-stat="pass_att" >36</td><td class="right " data-stat="pass_yds" >331</td><td class="right " data-stat="pass_td" >3</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >1</td><td class="right " data-stat="pass_sacked_yds" >11</td><td class="right " data-stat="pass_yds_per_att" >9.5</td><td class="right " data-stat="pass_net_yds_per_att" >8.9</td><td class="right " data-stat="pass_cmp_perc" >69.4</td><td class="right " data-stat="pass_rating" >126.0</td><td class="right " data-stat="rush_att" >23</td><td class="right " data-stat="rush_yds" >94</td><td class="right " data-stat="rush_yds_per_att" >4.1</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >3</td><td class="right " data-stat="fga" >3</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >3</td><td class="right " data-stat="punt_yds" >137</td><td class="right " data-stat="third_down_success" >8</td><td class="right " data-stat="third_down_att" >15</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >30:36</td></tr>
+<tr id="gamelog2017.8" ><th scope="row" class="right " data-stat="week_num" csk="8" >8</th><td class="left " data-stat="game_day_of_week" >Mon</td><td class="left " data-stat="game_date" csk="2017-10-30" >October 30</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710300kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/den/2017.htm">Denver Broncos</a></td><td class="right " data-stat="pts_off" >29</td><td class="right " data-stat="pts_def" >19</td><td class="right " data-stat="pass_cmp" >14</td><td class="right " data-stat="pass_att" >32</td><td class="right " data-stat="pass_yds" >197</td><td class="right " data-stat="pass_td" >1</td><td class="right " data-stat="pass_int" >1</td><td class="right " data-stat="pass_sacked" >1</td><td class="right " data-stat="pass_sacked_yds" >5</td><td class="right " data-stat="pass_yds_per_att" >6.3</td><td class="right " data-stat="pass_net_yds_per_att" >6.0</td><td class="right " data-stat="pass_cmp_perc" >43.8</td><td class="right " data-stat="pass_rating" >61.6</td><td class="right " data-stat="rush_att" >26</td><td class="right " data-stat="rush_yds" >79</td><td class="right " data-stat="rush_yds_per_att" >3.0</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >5</td><td class="right " data-stat="fga" >5</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >209</td><td class="right " data-stat="third_down_success" >2</td><td class="right " data-stat="third_down_att" >12</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >28:37</td></tr>
+<tr id="gamelog2017.9" ><th scope="row" class="right " data-stat="week_num" csk="9" >9</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-11-05" >November 5</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201711050dal.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/dal/2017.htm">Dallas Cowboys</a></td><td class="right " data-stat="pts_off" >17</td><td class="right " data-stat="pts_def" >28</td><td class="right " data-stat="pass_cmp" >25</td><td class="right " data-stat="pass_att" >34</td><td class="right " data-stat="pass_yds" >255</td><td class="right " data-stat="pass_td" >2</td><td class="right " data-stat="pass_int" >1</td><td class="right " data-stat="pass_sacked" >2</td><td class="right " data-stat="pass_sacked_yds" >8</td><td class="right " data-stat="pass_yds_per_att" >7.7</td><td class="right " data-stat="pass_net_yds_per_att" >7.1</td><td class="right " data-stat="pass_cmp_perc" >73.5</td><td class="right " data-stat="pass_rating" >102.0</td><td class="right " data-stat="rush_att" >19</td><td class="right " data-stat="rush_yds" >68</td><td class="right " data-stat="rush_yds_per_att" >3.6</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >1</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >231</td><td class="right " data-stat="third_down_success" >4</td><td class="right " data-stat="third_down_att" >11</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >28:43</td></tr>
+<tr id="gamelog2017.11" ><th scope="row" class="right " data-stat="week_num" csk="10" >11</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-11-19" >November 19</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201711190nyg.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left " data-stat="overtime" >OT</td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/nyg/2017.htm">New York Giants</a></td><td class="right " data-stat="pts_off" >9</td><td class="right " data-stat="pts_def" >12</td><td class="right " data-stat="pass_cmp" >27</td><td class="right " data-stat="pass_att" >41</td><td class="right " data-stat="pass_yds" >229</td><td class="right iz" data-stat="pass_td" >0</td><td class="right " data-stat="pass_int" >3</td><td class="right " data-stat="pass_sacked" >1</td><td class="right " data-stat="pass_sacked_yds" >1</td><td class="right " data-stat="pass_yds_per_att" >5.6</td><td class="right " data-stat="pass_net_yds_per_att" >5.5</td><td class="right " data-stat="pass_cmp_perc" >65.9</td><td class="right " data-stat="pass_rating" >49.7</td><td class="right " data-stat="rush_att" >29</td><td class="right " data-stat="rush_yds" >134</td><td class="right " data-stat="rush_yds_per_att" >4.6</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >3</td><td class="right " data-stat="fga" >3</td><td class="right iz" data-stat="xpm" >0</td><td class="right iz" data-stat="xpa" >0</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >215</td><td class="right " data-stat="third_down_success" >3</td><td class="right " data-stat="third_down_att" >11</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >37:16</td></tr>
+<tr id="gamelog2017.12" ><th scope="row" class="right " data-stat="week_num" csk="11" >12</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-11-26" >November 26</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201711260kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/buf/2017.htm">Buffalo Bills</a></td><td class="right " data-stat="pts_off" >10</td><td class="right " data-stat="pts_def" >16</td><td class="right " data-stat="pass_cmp" >23</td><td class="right " data-stat="pass_att" >36</td><td class="right " data-stat="pass_yds" >181</td><td class="right " data-stat="pass_td" >1</td><td class="right " data-stat="pass_int" >1</td><td class="right " data-stat="pass_sacked" >2</td><td class="right " data-stat="pass_sacked_yds" >18</td><td class="right " data-stat="pass_yds_per_att" >5.5</td><td class="right " data-stat="pass_net_yds_per_att" >4.8</td><td class="right " data-stat="pass_cmp_perc" >63.9</td><td class="right " data-stat="pass_rating" >74.0</td><td class="right " data-stat="rush_att" >19</td><td class="right " data-stat="rush_yds" >55</td><td class="right " data-stat="rush_yds_per_att" >2.9</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >1</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >8</td><td class="right " data-stat="punt_yds" >390</td><td class="right " data-stat="third_down_success" >2</td><td class="right " data-stat="third_down_att" >13</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >26:42</td></tr>
+<tr id="gamelog2017.13" ><th scope="row" class="right " data-stat="week_num" csk="12" >13</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-12-03" >December 3</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712030nyj.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/nyj/2017.htm">New York Jets</a></td><td class="right " data-stat="pts_off" >31</td><td class="right " data-stat="pts_def" >38</td><td class="right " data-stat="pass_cmp" >19</td><td class="right " data-stat="pass_att" >33</td><td class="right " data-stat="pass_yds" >362</td><td class="right " data-stat="pass_td" >4</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >2</td><td class="right " data-stat="pass_sacked_yds" >4</td><td class="right " data-stat="pass_yds_per_att" >11.1</td><td class="right " data-stat="pass_net_yds_per_att" >10.3</td><td class="right " data-stat="pass_cmp_perc" >57.6</td><td class="right " data-stat="pass_rating" >135.4</td><td class="right " data-stat="rush_att" >11</td><td class="right " data-stat="rush_yds" >112</td><td class="right " data-stat="rush_yds_per_att" >10.2</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >2</td><td class="right " data-stat="xpm" >4</td><td class="right " data-stat="xpa" >4</td><td class="right " data-stat="punt" >2</td><td class="right " data-stat="punt_yds" >98</td><td class="right " data-stat="third_down_success" >3</td><td class="right " data-stat="third_down_att" >8</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >17:11</td></tr>
+<tr id="gamelog2017.14" ><th scope="row" class="right " data-stat="week_num" csk="13" >14</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-12-10" >December 10</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712100kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/rai/2017.htm">Oakland Raiders</a></td><td class="right " data-stat="pts_off" >26</td><td class="right " data-stat="pts_def" >15</td><td class="right " data-stat="pass_cmp" >20</td><td class="right " data-stat="pass_att" >34</td><td class="right " data-stat="pass_yds" >243</td><td class="right iz" data-stat="pass_td" >0</td><td class="right " data-stat="pass_int" >1</td><td class="right " data-stat="pass_sacked" >4</td><td class="right " data-stat="pass_sacked_yds" >25</td><td class="right " data-stat="pass_yds_per_att" >7.9</td><td class="right " data-stat="pass_net_yds_per_att" >6.4</td><td class="right " data-stat="pass_cmp_perc" >58.8</td><td class="right " data-stat="pass_rating" >68.6</td><td class="right " data-stat="rush_att" >33</td><td class="right " data-stat="rush_yds" >165</td><td class="right " data-stat="rush_yds_per_att" >5.0</td><td class="right " data-stat="rush_td" >2</td><td class="right " data-stat="fgm" >4</td><td class="right " data-stat="fga" >4</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >3</td><td class="right " data-stat="punt_yds" >103</td><td class="right " data-stat="third_down_success" >5</td><td class="right " data-stat="third_down_att" >13</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >36:40</td></tr>
+<tr id="gamelog2017.15" ><th scope="row" class="right " data-stat="week_num" csk="14" >15</th><td class="left " data-stat="game_day_of_week" >Sat</td><td class="left " data-stat="game_date" csk="2017-12-16" >December 16</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712160kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/sdg/2017.htm">Los Angeles Chargers</a></td><td class="right " data-stat="pts_off" >30</td><td class="right " data-stat="pts_def" >13</td><td class="right " data-stat="pass_cmp" >23</td><td class="right " data-stat="pass_att" >30</td><td class="right " data-stat="pass_yds" >223</td><td class="right " data-stat="pass_td" >2</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >1</td><td class="right " data-stat="pass_sacked_yds" >8</td><td class="right " data-stat="pass_yds_per_att" >7.7</td><td class="right " data-stat="pass_net_yds_per_att" >7.2</td><td class="right " data-stat="pass_cmp_perc" >76.7</td><td class="right " data-stat="pass_rating" >119.2</td><td class="right " data-stat="rush_att" >32</td><td class="right " data-stat="rush_yds" >174</td><td class="right " data-stat="rush_yds_per_att" >5.4</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >3</td><td class="right " data-stat="fga" >4</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >3</td><td class="right " data-stat="punt_yds" >129</td><td class="right " data-stat="third_down_success" >6</td><td class="right " data-stat="third_down_att" >14</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >33:21</td></tr>
+<tr id="gamelog2017.16" ><th scope="row" class="right " data-stat="week_num" csk="15" >16</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-12-24" >December 24</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712240kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/mia/2017.htm">Miami Dolphins</a></td><td class="right " data-stat="pts_off" >29</td><td class="right " data-stat="pts_def" >13</td><td class="right " data-stat="pass_cmp" >25</td><td class="right " data-stat="pass_att" >39</td><td class="right " data-stat="pass_yds" >301</td><td class="right " data-stat="pass_td" >1</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >1</td><td class="right " data-stat="pass_sacked_yds" >3</td><td class="right " data-stat="pass_yds_per_att" >7.8</td><td class="right " data-stat="pass_net_yds_per_att" >7.5</td><td class="right " data-stat="pass_cmp_perc" >64.1</td><td class="right " data-stat="pass_rating" >96.2</td><td class="right " data-stat="rush_att" >34</td><td class="right " data-stat="rush_yds" >103</td><td class="right " data-stat="rush_yds_per_att" >3.0</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >5</td><td class="right " data-stat="fga" >6</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >1</td><td class="right " data-stat="punt_yds" >49</td><td class="right " data-stat="third_down_success" >8</td><td class="right " data-stat="third_down_att" >16</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >37:53</td></tr>
+<tr id="gamelog2017.17" ><th scope="row" class="right " data-stat="week_num" csk="16" >17</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-12-31" >December 31</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712310den.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/den/2017.htm">Denver Broncos</a></td><td class="right " data-stat="pts_off" >27</td><td class="right " data-stat="pts_def" >24</td><td class="right " data-stat="pass_cmp" >22</td><td class="right " data-stat="pass_att" >36</td><td class="right " data-stat="pass_yds" >269</td><td class="right iz" data-stat="pass_td" >0</td><td class="right " data-stat="pass_int" >1</td><td class="right " data-stat="pass_sacked" >2</td><td class="right " data-stat="pass_sacked_yds" >15</td><td class="right " data-stat="pass_yds_per_att" >7.9</td><td class="right " data-stat="pass_net_yds_per_att" >7.1</td><td class="right " data-stat="pass_cmp_perc" >61.1</td><td class="right " data-stat="pass_rating" >72.6</td><td class="right " data-stat="rush_att" >27</td><td class="right " data-stat="rush_yds" >110</td><td class="right " data-stat="rush_yds_per_att" >4.1</td><td class="right " data-stat="rush_td" >2</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >2</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >256</td><td class="right " data-stat="third_down_success" >4</td><td class="right " data-stat="third_down_att" >11</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >29:03</td></tr>
+
+</table>
+
+
+</div>
+
+<div class="placeholder"></div>
+
+</div>
+
+            
+            
+            
+         
+      
+         
+            
+<div id="all_playoff_gamelog2017" class="table_wrapper setup_long long">
+
+<div class="section_heading assoc_playoff_gamelog2017" id="playoff_gamelog2017_sh">
+  <span class="section_anchor" id="playoff_gamelog2017_link" data-label="Playoffs Game Logs"></span><h2>Playoffs Game Logs</h2>    <div class="section_heading_text">
+      <ul>
+      </ul>
+    </div>
+    		
+</div>
+<div class="table_container" id="div_playoff_gamelog2017">
+    
+    <table class="row_summable sortable stats_table" id="playoff_gamelog2017" data-cols-to-freeze="1,3">
+    <caption>Playoffs Game Logs Table</caption>
+    
+
+   <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+   <thead>
+
+      
+      <tr class="over_header">
+         <th aria-label="" data-stat="" colspan="8" class=" over_header center" ></th>
+         <th aria-label="" data-stat="header_score" colspan="2" class=" over_header center" >Score</th>
+         <th aria-label="" data-stat="header_pass" colspan="11" class=" over_header center" >Passing</th>
+         <th aria-label="" data-stat="header_rush" colspan="4" class=" over_header center" >Rushing</th>
+         <th aria-label="" data-stat="header_scoring" colspan="4" class=" over_header center" >Scoring</th>
+         <th aria-label="" data-stat="header_punt" colspan="2" class=" over_header center" >Punting</th>
+         <th aria-label="" data-stat="header_downs" colspan="4" class=" over_header center" >Downs</th><th></th>
+      </tr>
+            
+      <tr>
+         <th aria-label="Week" data-stat="week_num" scope="col" class=" poptip sort_default_asc sorttable_nosort center" data-tip="Week number in season" >Week</th>
+         <th aria-label="Day" data-stat="game_day_of_week" scope="col" class=" poptip sort_default_asc left" >Day</th>
+         <th aria-label="Date" data-stat="game_date" scope="col" class=" poptip sort_default_asc center" >Date</th>
+         <th aria-label="" data-stat="boxscore_word" scope="col" class=" poptip sort_default_asc center" ></th>
+         <th aria-label="" data-stat="game_outcome" scope="col" class=" poptip center" ></th>
+         <th aria-label="OT" data-stat="overtime" scope="col" class=" poptip sort_default_asc left" >OT</th>
+         <th aria-label="" data-stat="game_location" scope="col" class=" poptip sort_default_asc center" ></th>
+         <th aria-label="Opp" data-stat="opp" scope="col" class=" poptip sort_default_asc center" >Opp</th>
+         <th aria-label="Tm" data-stat="pts_off" scope="col" class=" poptip center" data-tip="Points scored" data-over-header="Score" >Tm</th>
+         <th aria-label="Opp" data-stat="pts_def" scope="col" class=" poptip center" data-tip="Points allowed" data-over-header="Score" >Opp</th>
+         <th aria-label="Passes Completed" data-stat="pass_cmp" scope="col" class=" poptip center" data-tip="Passes completed" data-over-header="Passing" >Cmp</th>
+         <th aria-label="Pass Attempts" data-stat="pass_att" scope="col" class=" poptip center" data-tip="Passes attempted" data-over-header="Passing" >Att</th>
+         <th aria-label="Passing Yds" data-stat="pass_yds" scope="col" class=" poptip center" data-tip="Yards Gained by Passing<br>For teams, sack yardage is deducted from this total" data-over-header="Passing" >Yds</th>
+         <th aria-label="Passing TD" data-stat="pass_td" scope="col" class=" poptip center" data-tip="Passing Touchdowns" data-over-header="Passing" >TD</th>
+         <th aria-label="Passes Intercepted" data-stat="pass_int" scope="col" class=" poptip center" data-tip="Interceptions thrown" data-over-header="Passing" >Int</th>
+         <th aria-label="Sacked " data-stat="pass_sacked" scope="col" class=" poptip center" data-tip="Times Sacked (official since 1969, complete NFL coverage since 1963, partial NFL coverage from 1960-62)" data-over-header="Passing" >Sk</th>
+         <th aria-label="Sacked Yds Lost" data-stat="pass_sacked_yds" scope="col" class=" poptip center" data-tip="Yards lost due to sacks (official since 1969, complete NFL coverage since 1960)" data-over-header="Passing" >Yds</th>
+         <th aria-label="Yds/Pass Att" data-stat="pass_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Yards gained per pass attempt <br>Minimum 14 attempts per scheduled game to qualify as leader.<br>Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Yds/Pass Att" >Y/A</th>
+         <th aria-label="Net Yds/Pass Att" data-stat="pass_net_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Net Yards gained per pass attempt<br />(Passing Yards - Sack Yards) / (Passes Attempted + Times Sacked)<br />Minimum 14 attempts per schedule game to qualify as leader.<br />Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Net Yds/Pass Att" >NY/A</th>
+         <th aria-label="Pass Completion %" data-stat="pass_cmp_perc" scope="col" class=" poptip hide_non_quals center" data-tip="Percentage of Passes Completed<br>Minimum 14 attempts per scheduled game to qualify as leader.<br />Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Pass Completion %" >Cmp%</th>
+         <th aria-label="Passer Rating" data-stat="pass_rating" scope="col" class=" poptip hide_non_quals center" data-tip="Quarterback Rating, see glossary for details<br>Different ratings are used by the NFL and NCAA.<br />Minimum 1500 pass attempts to qualify as career leader, minimum 150 pass attempts for playoffs leader." data-over-header="Passing" data-filter="1" data-name="Passer Rating" >Rate</th>
+         <th aria-label="Rushing Att" data-stat="rush_att" scope="col" class=" poptip center" data-tip="Rushing Attempts (sacks not included in NFL)" data-over-header="Rushing" >Att</th>
+         <th aria-label="Rushing Yds" data-stat="rush_yds" scope="col" class=" poptip center" data-tip="Rushing Yards Gained (sack yardage is not included by NFL)" data-over-header="Rushing" >Yds</th>
+         <th aria-label="Yds/Rushing Att" data-stat="rush_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Rushing Yards per Attempt<br>Minimum 6.25 rushes per game scheduled to qualify as leader.<br />Minimum 750 rushes to qualify as career leader." data-over-header="Rushing" data-filter="1" data-name="Yds/Rushing Att" >Y/A</th>
+         <th aria-label="Rushing TD" data-stat="rush_td" scope="col" class=" poptip center" data-tip="Rushing Touchdowns" data-over-header="Rushing" >TD</th>
+         <th aria-label="Field Goals Made" data-stat="fgm" scope="col" class=" poptip center" data-tip="Field Goals Made" data-over-header="Scoring" >FGM</th>
+         <th aria-label="Field Goals Att" data-stat="fga" scope="col" class=" poptip center" data-tip="Field Goals Attempted" data-over-header="Scoring" >FGA</th>
+         <th aria-label="Extra Pt Made" data-stat="xpm" scope="col" class=" poptip center" data-tip="Extra Points Made" data-over-header="Scoring" >XPM</th>
+         <th aria-label="Extra Pt Att" data-stat="xpa" scope="col" class=" poptip center" data-tip="Extra Points Attempted" data-over-header="Scoring" >XPA</th>
+         <th aria-label="Punts" data-stat="punt" scope="col" class=" poptip center" data-tip="Times Punted" data-over-header="Punting" >Pnt</th>
+         <th aria-label="Punting Yds" data-stat="punt_yds" scope="col" class=" poptip center" data-tip="Total Punt Yardage" data-over-header="Punting" >Yds</th>
+         <th aria-label="3rd Down Conversions" data-stat="third_down_success" scope="col" class=" poptip center" data-tip="3rd Down Conversions in game" data-over-header="Downs" >3DConv</th>
+         <th aria-label="3rd Down Attempts" data-stat="third_down_att" scope="col" class=" poptip center" data-tip="3rd Down Attempts in game" data-over-header="Downs" >3DAtt</th>
+         <th aria-label="4th Down Conversions" data-stat="fourth_down_success" scope="col" class=" poptip center" data-tip="4th Down Conversions in game" data-over-header="Downs" >4DConv</th>
+         <th aria-label="4th Down Attempts" data-stat="fourth_down_att" scope="col" class=" poptip center" data-tip="4th Down Attempts in game" data-over-header="Downs" >4DAtt</th>
+         <th aria-label="Time of Possession" data-stat="time_of_poss" scope="col" class=" poptip center" data-tip="Offensive time of possesion" data-over-header="Tot Yds &amp; TO" >ToP</th>
+      </tr>
+      </thead>
+<tbody><tr id="playoff_gamelog2017.18" ><th scope="row" class="right " data-stat="week_num" csk="17" >18</th><td class="left " data-stat="game_day_of_week" >Sat</td><td class="left " data-stat="game_date" csk="2018-01-06" >January 6</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201801060kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/oti/2017.htm">Tennessee Titans</a></td><td class="right " data-stat="pts_off" >21</td><td class="right " data-stat="pts_def" >22</td><td class="right " data-stat="pass_cmp" >24</td><td class="right " data-stat="pass_att" >33</td><td class="right " data-stat="pass_yds" >256</td><td class="right " data-stat="pass_td" >2</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >4</td><td class="right " data-stat="pass_sacked_yds" >8</td><td class="right " data-stat="pass_yds_per_att" >8.0</td><td class="right " data-stat="pass_net_yds_per_att" >6.9</td><td class="right " data-stat="pass_cmp_perc" >72.7</td><td class="right " data-stat="pass_rating" >115.2</td><td class="right " data-stat="rush_att" >16</td><td class="right " data-stat="rush_yds" >69</td><td class="right " data-stat="rush_yds_per_att" >4.3</td><td class="right " data-stat="rush_td" >1</td><td class="right iz" data-stat="fgm" >0</td><td class="right " data-stat="fga" >1</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >250</td><td class="right " data-stat="third_down_success" >4</td><td class="right " data-stat="third_down_att" >11</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >27:32</td></tr>
+
+</table>
+
+
+</div>
+
+<div class="placeholder"></div>
+
+</div>
+
+            
+            
+            
+         
+      
+         
+            
+<div id="all_gamelog_opp2017" class="table_wrapper setup_long long">
+
+<div class="section_heading assoc_gamelog_opp2017" id="gamelog_opp2017_sh">
+  <span class="section_anchor" id="gamelog_opp2017_link" data-label="Opponent Game Logs"></span><h2>Opponent Game Logs</h2>    <div class="section_heading_text">
+      <ul>
+      </ul>
+    </div>
+    		
+</div>
+<div class="table_container" id="div_gamelog_opp2017">
+    
+    <table class="row_summable sortable stats_table" id="gamelog_opp2017" data-cols-to-freeze="1,3">
+    <caption>Opponent Game Logs Table</caption>
+    
+
+   <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+   <thead>
+
+      
+      <tr class="over_header">
+         <th aria-label="" data-stat="" colspan="8" class=" over_header center" ></th>
+         <th aria-label="" data-stat="header_score" colspan="2" class=" over_header center" >Score</th>
+         <th aria-label="" data-stat="header_pass" colspan="11" class=" over_header center" >Passing</th>
+         <th aria-label="" data-stat="header_rush" colspan="4" class=" over_header center" >Rushing</th>
+         <th aria-label="" data-stat="header_scoring" colspan="4" class=" over_header center" >Scoring</th>
+         <th aria-label="" data-stat="header_punt" colspan="2" class=" over_header center" >Punting</th>
+         <th aria-label="" data-stat="header_downs" colspan="4" class=" over_header center" >Downs</th><th></th>
+      </tr>
+            
+      <tr>
+         <th aria-label="Week" data-stat="week_num" scope="col" class=" poptip sort_default_asc sorttable_nosort center" data-tip="Week number in season" >Week</th>
+         <th aria-label="Day" data-stat="game_day_of_week" scope="col" class=" poptip sort_default_asc left" >Day</th>
+         <th aria-label="Date" data-stat="game_date" scope="col" class=" poptip sort_default_asc center" >Date</th>
+         <th aria-label="" data-stat="boxscore_word" scope="col" class=" poptip sort_default_asc center" ></th>
+         <th aria-label="" data-stat="game_outcome" scope="col" class=" poptip center" ></th>
+         <th aria-label="OT" data-stat="overtime" scope="col" class=" poptip sort_default_asc left" >OT</th>
+         <th aria-label="" data-stat="game_location" scope="col" class=" poptip sort_default_asc center" ></th>
+         <th aria-label="Opp" data-stat="opp" scope="col" class=" poptip sort_default_asc center" >Opp</th>
+         <th aria-label="Tm" data-stat="pts_off" scope="col" class=" poptip center" data-tip="Points scored" data-over-header="Score" >Tm</th>
+         <th aria-label="Opp" data-stat="pts_def" scope="col" class=" poptip center" data-tip="Points allowed" data-over-header="Score" >Opp</th>
+         <th aria-label="Passes Completed" data-stat="pass_cmp" scope="col" class=" poptip center" data-tip="Passes completed" data-over-header="Passing" >Cmp</th>
+         <th aria-label="Pass Attempts" data-stat="pass_att" scope="col" class=" poptip center" data-tip="Passes attempted" data-over-header="Passing" >Att</th>
+         <th aria-label="Passing Yds" data-stat="pass_yds" scope="col" class=" poptip center" data-tip="Yards Gained by Passing<br>For teams, sack yardage is deducted from this total" data-over-header="Passing" >Yds</th>
+         <th aria-label="Passing TD" data-stat="pass_td" scope="col" class=" poptip center" data-tip="Passing Touchdowns" data-over-header="Passing" >TD</th>
+         <th aria-label="Passes Intercepted" data-stat="pass_int" scope="col" class=" poptip center" data-tip="Interceptions thrown" data-over-header="Passing" >Int</th>
+         <th aria-label="Sacked " data-stat="pass_sacked" scope="col" class=" poptip center" data-tip="Times Sacked (official since 1969, complete NFL coverage since 1963, partial NFL coverage from 1960-62)" data-over-header="Passing" >Sk</th>
+         <th aria-label="Sacked Yds Lost" data-stat="pass_sacked_yds" scope="col" class=" poptip center" data-tip="Yards lost due to sacks (official since 1969, complete NFL coverage since 1960)" data-over-header="Passing" >Yds</th>
+         <th aria-label="Yds/Pass Att" data-stat="pass_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Yards gained per pass attempt <br>Minimum 14 attempts per scheduled game to qualify as leader.<br>Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Yds/Pass Att" >Y/A</th>
+         <th aria-label="Net Yds/Pass Att" data-stat="pass_net_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Net Yards gained per pass attempt<br />(Passing Yards - Sack Yards) / (Passes Attempted + Times Sacked)<br />Minimum 14 attempts per schedule game to qualify as leader.<br />Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Net Yds/Pass Att" >NY/A</th>
+         <th aria-label="Pass Completion %" data-stat="pass_cmp_perc" scope="col" class=" poptip hide_non_quals center" data-tip="Percentage of Passes Completed<br>Minimum 14 attempts per scheduled game to qualify as leader.<br />Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Pass Completion %" >Cmp%</th>
+         <th aria-label="Passer Rating" data-stat="pass_rating" scope="col" class=" poptip hide_non_quals center" data-tip="Quarterback Rating, see glossary for details<br>Different ratings are used by the NFL and NCAA.<br />Minimum 1500 pass attempts to qualify as career leader, minimum 150 pass attempts for playoffs leader." data-over-header="Passing" data-filter="1" data-name="Passer Rating" >Rate</th>
+         <th aria-label="Rushing Att" data-stat="rush_att" scope="col" class=" poptip center" data-tip="Rushing Attempts (sacks not included in NFL)" data-over-header="Rushing" >Att</th>
+         <th aria-label="Rushing Yds" data-stat="rush_yds" scope="col" class=" poptip center" data-tip="Rushing Yards Gained (sack yardage is not included by NFL)" data-over-header="Rushing" >Yds</th>
+         <th aria-label="Yds/Rushing Att" data-stat="rush_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Rushing Yards per Attempt<br>Minimum 6.25 rushes per game scheduled to qualify as leader.<br />Minimum 750 rushes to qualify as career leader." data-over-header="Rushing" data-filter="1" data-name="Yds/Rushing Att" >Y/A</th>
+         <th aria-label="Rushing TD" data-stat="rush_td" scope="col" class=" poptip center" data-tip="Rushing Touchdowns" data-over-header="Rushing" >TD</th>
+         <th aria-label="Field Goals Made" data-stat="fgm" scope="col" class=" poptip center" data-tip="Field Goals Made" data-over-header="Scoring" >FGM</th>
+         <th aria-label="Field Goals Att" data-stat="fga" scope="col" class=" poptip center" data-tip="Field Goals Attempted" data-over-header="Scoring" >FGA</th>
+         <th aria-label="Extra Pt Made" data-stat="xpm" scope="col" class=" poptip center" data-tip="Extra Points Made" data-over-header="Scoring" >XPM</th>
+         <th aria-label="Extra Pt Att" data-stat="xpa" scope="col" class=" poptip center" data-tip="Extra Points Attempted" data-over-header="Scoring" >XPA</th>
+         <th aria-label="Punts" data-stat="punt" scope="col" class=" poptip center" data-tip="Times Punted" data-over-header="Punting" >Pnt</th>
+         <th aria-label="Punting Yds" data-stat="punt_yds" scope="col" class=" poptip center" data-tip="Total Punt Yardage" data-over-header="Punting" >Yds</th>
+         <th aria-label="3rd Down Conversions" data-stat="third_down_success" scope="col" class=" poptip center" data-tip="3rd Down Conversions in game" data-over-header="Downs" >3DConv</th>
+         <th aria-label="3rd Down Attempts" data-stat="third_down_att" scope="col" class=" poptip center" data-tip="3rd Down Attempts in game" data-over-header="Downs" >3DAtt</th>
+         <th aria-label="4th Down Conversions" data-stat="fourth_down_success" scope="col" class=" poptip center" data-tip="4th Down Conversions in game" data-over-header="Downs" >4DConv</th>
+         <th aria-label="4th Down Attempts" data-stat="fourth_down_att" scope="col" class=" poptip center" data-tip="4th Down Attempts in game" data-over-header="Downs" >4DAtt</th>
+         <th aria-label="Time of Possession" data-stat="time_of_poss" scope="col" class=" poptip center" data-tip="Offensive time of possesion" data-over-header="Tot Yds &amp; TO" >ToP</th>
+      </tr>
+      </thead>
+<tbody><tr id="gamelog_opp2017.1" ><th scope="row" class="right " data-stat="week_num" csk="1" >1</th><td class="left " data-stat="game_day_of_week" >Thu</td><td class="left " data-stat="game_date" csk="2017-09-07" >September 7</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201709070nwe.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/nwe/2017.htm">New England Patriots</a></td><td class="right " data-stat="pts_off" >42</td><td class="right " data-stat="pts_def" >27</td><td class="right " data-stat="pass_cmp" >16</td><td class="right " data-stat="pass_att" >36</td><td class="right " data-stat="pass_yds" >247</td><td class="right iz" data-stat="pass_td" >0</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >3</td><td class="right " data-stat="pass_sacked_yds" >20</td><td class="right " data-stat="pass_yds_per_att" >7.4</td><td class="right " data-stat="pass_net_yds_per_att" >6.3</td><td class="right " data-stat="pass_cmp_perc" >44.4</td><td class="right " data-stat="pass_rating" >67.7</td><td class="right " data-stat="rush_att" >35</td><td class="right " data-stat="rush_yds" >124</td><td class="right " data-stat="rush_yds_per_att" >3.5</td><td class="right " data-stat="rush_td" >3</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >2</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >6</td><td class="right " data-stat="punt_yds" >242</td><td class="right " data-stat="third_down_success" >5</td><td class="right " data-stat="third_down_att" >15</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >2</td><td class="right " data-stat="time_of_poss" >29:46</td></tr>
+<tr id="gamelog_opp2017.2" ><th scope="row" class="right " data-stat="week_num" csk="2" >2</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-09-17" >September 17</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201709170kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/phi/2017.htm">Philadelphia Eagles</a></td><td class="right " data-stat="pts_off" >27</td><td class="right " data-stat="pts_def" >20</td><td class="right " data-stat="pass_cmp" >25</td><td class="right " data-stat="pass_att" >46</td><td class="right " data-stat="pass_yds" >299</td><td class="right " data-stat="pass_td" >2</td><td class="right " data-stat="pass_int" >1</td><td class="right " data-stat="pass_sacked" >6</td><td class="right " data-stat="pass_sacked_yds" >34</td><td class="right " data-stat="pass_yds_per_att" >7.2</td><td class="right " data-stat="pass_net_yds_per_att" >5.8</td><td class="right " data-stat="pass_cmp_perc" >54.3</td><td class="right " data-stat="pass_rating" >79.9</td><td class="right " data-stat="rush_att" >17</td><td class="right " data-stat="rush_yds" >107</td><td class="right " data-stat="rush_yds_per_att" >6.3</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >3</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >4</td><td class="right " data-stat="punt_yds" >169</td><td class="right " data-stat="third_down_success" >8</td><td class="right " data-stat="third_down_att" >15</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >30:49</td></tr>
+<tr id="gamelog_opp2017.3" ><th scope="row" class="right " data-stat="week_num" csk="3" >3</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-09-24" >September 24</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201709240sdg.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/sdg/2017.htm">Los Angeles Chargers</a></td><td class="right " data-stat="pts_off" >24</td><td class="right " data-stat="pts_def" >10</td><td class="right " data-stat="pass_cmp" >20</td><td class="right " data-stat="pass_att" >40</td><td class="right " data-stat="pass_yds" >226</td><td class="right iz" data-stat="pass_td" >0</td><td class="right " data-stat="pass_int" >3</td><td class="right " data-stat="pass_sacked" >2</td><td class="right " data-stat="pass_sacked_yds" >11</td><td class="right " data-stat="pass_yds_per_att" >5.9</td><td class="right " data-stat="pass_net_yds_per_att" >5.4</td><td class="right " data-stat="pass_cmp_perc" >50.0</td><td class="right " data-stat="pass_rating" >36.0</td><td class="right " data-stat="rush_att" >26</td><td class="right " data-stat="rush_yds" >104</td><td class="right " data-stat="rush_yds_per_att" >4.0</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >1</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >250</td><td class="right " data-stat="third_down_success" >5</td><td class="right " data-stat="third_down_att" >13</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >29:34</td></tr>
+<tr id="gamelog_opp2017.4" ><th scope="row" class="right " data-stat="week_num" csk="4" >4</th><td class="left " data-stat="game_day_of_week" >Mon</td><td class="left " data-stat="game_date" csk="2017-10-02" >October 2</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710020kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/was/2017.htm">Washington Redskins</a></td><td class="right " data-stat="pts_off" >29</td><td class="right " data-stat="pts_def" >20</td><td class="right " data-stat="pass_cmp" >14</td><td class="right " data-stat="pass_att" >24</td><td class="right " data-stat="pass_yds" >220</td><td class="right " data-stat="pass_td" >2</td><td class="right iz" data-stat="pass_int" >0</td><td class="right iz" data-stat="pass_sacked" >0</td><td class="right iz" data-stat="pass_sacked_yds" >0</td><td class="right " data-stat="pass_yds_per_att" >9.2</td><td class="right " data-stat="pass_net_yds_per_att" >9.2</td><td class="right " data-stat="pass_cmp_perc" >58.3</td><td class="right " data-stat="pass_rating" >116.7</td><td class="right " data-stat="rush_att" >26</td><td class="right " data-stat="rush_yds" >111</td><td class="right " data-stat="rush_yds_per_att" >4.3</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >2</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >4</td><td class="right " data-stat="punt_yds" >169</td><td class="right " data-stat="third_down_success" >4</td><td class="right " data-stat="third_down_att" >11</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >22:51</td></tr>
+<tr id="gamelog_opp2017.5" ><th scope="row" class="right " data-stat="week_num" csk="5" >5</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-10-08" >October 8</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710080htx.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/htx/2017.htm">Houston Texans</a></td><td class="right " data-stat="pts_off" >42</td><td class="right " data-stat="pts_def" >34</td><td class="right " data-stat="pass_cmp" >16</td><td class="right " data-stat="pass_att" >31</td><td class="right " data-stat="pass_yds" >248</td><td class="right " data-stat="pass_td" >5</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >3</td><td class="right " data-stat="pass_sacked_yds" >13</td><td class="right " data-stat="pass_yds_per_att" >8.4</td><td class="right " data-stat="pass_net_yds_per_att" >7.3</td><td class="right " data-stat="pass_cmp_perc" >51.6</td><td class="right " data-stat="pass_rating" >118.0</td><td class="right " data-stat="rush_att" >23</td><td class="right " data-stat="rush_yds" >144</td><td class="right " data-stat="rush_yds_per_att" >6.3</td><td class="right iz" data-stat="rush_td" >0</td><td class="right iz" data-stat="fgm" >0</td><td class="right iz" data-stat="fga" >0</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >240</td><td class="right " data-stat="third_down_success" >3</td><td class="right " data-stat="third_down_att" >10</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >21:43</td></tr>
+<tr id="gamelog_opp2017.6" ><th scope="row" class="right " data-stat="week_num" csk="6" >6</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-10-15" >October 15</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710150kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/pit/2017.htm">Pittsburgh Steelers</a></td><td class="right " data-stat="pts_off" >13</td><td class="right " data-stat="pts_def" >19</td><td class="right " data-stat="pass_cmp" >17</td><td class="right " data-stat="pass_att" >25</td><td class="right " data-stat="pass_yds" >245</td><td class="right " data-stat="pass_td" >1</td><td class="right " data-stat="pass_int" >1</td><td class="right " data-stat="pass_sacked" >1</td><td class="right " data-stat="pass_sacked_yds" >7</td><td class="right " data-stat="pass_yds_per_att" >10.1</td><td class="right " data-stat="pass_net_yds_per_att" >9.4</td><td class="right " data-stat="pass_cmp_perc" >68.0</td><td class="right " data-stat="pass_rating" >96.2</td><td class="right " data-stat="rush_att" >37</td><td class="right " data-stat="rush_yds" >194</td><td class="right " data-stat="rush_yds_per_att" >5.2</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >1</td><td class="right " data-stat="xpm" >2</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >207</td><td class="right " data-stat="third_down_success" >4</td><td class="right " data-stat="third_down_att" >11</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >36:39</td></tr>
+<tr id="gamelog_opp2017.7" ><th scope="row" class="right " data-stat="week_num" csk="7" >7</th><td class="left " data-stat="game_day_of_week" >Thu</td><td class="left " data-stat="game_date" csk="2017-10-19" >October 19</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710190rai.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/rai/2017.htm">Oakland Raiders</a></td><td class="right " data-stat="pts_off" >30</td><td class="right " data-stat="pts_def" >31</td><td class="right " data-stat="pass_cmp" >29</td><td class="right " data-stat="pass_att" >52</td><td class="right " data-stat="pass_yds" >417</td><td class="right " data-stat="pass_td" >3</td><td class="right iz" data-stat="pass_int" >0</td><td class="right iz" data-stat="pass_sacked" >0</td><td class="right iz" data-stat="pass_sacked_yds" >0</td><td class="right " data-stat="pass_yds_per_att" >8.0</td><td class="right " data-stat="pass_net_yds_per_att" >8.0</td><td class="right " data-stat="pass_cmp_perc" >55.8</td><td class="right " data-stat="pass_rating" >101.2</td><td class="right " data-stat="rush_att" >21</td><td class="right " data-stat="rush_yds" >88</td><td class="right " data-stat="rush_yds_per_att" >4.2</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >3</td><td class="right " data-stat="xpm" >4</td><td class="right " data-stat="xpa" >4</td><td class="right " data-stat="punt" >3</td><td class="right " data-stat="punt_yds" >146</td><td class="right " data-stat="third_down_success" >6</td><td class="right " data-stat="third_down_att" >13</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >29:24</td></tr>
+<tr id="gamelog_opp2017.8" ><th scope="row" class="right " data-stat="week_num" csk="8" >8</th><td class="left " data-stat="game_day_of_week" >Mon</td><td class="left " data-stat="game_date" csk="2017-10-30" >October 30</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201710300kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/den/2017.htm">Denver Broncos</a></td><td class="right " data-stat="pts_off" >29</td><td class="right " data-stat="pts_def" >19</td><td class="right " data-stat="pass_cmp" >19</td><td class="right " data-stat="pass_att" >36</td><td class="right " data-stat="pass_yds" >187</td><td class="right " data-stat="pass_td" >1</td><td class="right " data-stat="pass_int" >3</td><td class="right " data-stat="pass_sacked" >3</td><td class="right " data-stat="pass_sacked_yds" >11</td><td class="right " data-stat="pass_yds_per_att" >5.5</td><td class="right " data-stat="pass_net_yds_per_att" >4.8</td><td class="right " data-stat="pass_cmp_perc" >52.8</td><td class="right " data-stat="pass_rating" >42.2</td><td class="right " data-stat="rush_att" >31</td><td class="right " data-stat="rush_yds" >177</td><td class="right " data-stat="rush_yds_per_att" >5.7</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >2</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >4</td><td class="right " data-stat="punt_yds" >162</td><td class="right " data-stat="third_down_success" >5</td><td class="right " data-stat="third_down_att" >13</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >31:23</td></tr>
+<tr id="gamelog_opp2017.9" ><th scope="row" class="right " data-stat="week_num" csk="9" >9</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-11-05" >November 5</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201711050dal.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/dal/2017.htm">Dallas Cowboys</a></td><td class="right " data-stat="pts_off" >17</td><td class="right " data-stat="pts_def" >28</td><td class="right " data-stat="pass_cmp" >21</td><td class="right " data-stat="pass_att" >33</td><td class="right " data-stat="pass_yds" >244</td><td class="right " data-stat="pass_td" >2</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >1</td><td class="right " data-stat="pass_sacked_yds" >5</td><td class="right " data-stat="pass_yds_per_att" >7.5</td><td class="right " data-stat="pass_net_yds_per_att" >7.2</td><td class="right " data-stat="pass_cmp_perc" >63.6</td><td class="right " data-stat="pass_rating" >106.1</td><td class="right " data-stat="rush_att" >31</td><td class="right " data-stat="rush_yds" >131</td><td class="right " data-stat="rush_yds_per_att" >4.2</td><td class="right " data-stat="rush_td" >2</td><td class="right iz" data-stat="fgm" >0</td><td class="right iz" data-stat="fga" >0</td><td class="right " data-stat="xpm" >4</td><td class="right " data-stat="xpa" >4</td><td class="right " data-stat="punt" >5</td><td class="right " data-stat="punt_yds" >195</td><td class="right " data-stat="third_down_success" >7</td><td class="right " data-stat="third_down_att" >12</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >31:17</td></tr>
+<tr id="gamelog_opp2017.11" ><th scope="row" class="right " data-stat="week_num" csk="10" >11</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-11-19" >November 19</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201711190nyg.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left " data-stat="overtime" >OT</td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/nyg/2017.htm">New York Giants</a></td><td class="right " data-stat="pts_off" >9</td><td class="right " data-stat="pts_def" >12</td><td class="right " data-stat="pass_cmp" >19</td><td class="right " data-stat="pass_att" >36</td><td class="right " data-stat="pass_yds" >205</td><td class="right iz" data-stat="pass_td" >0</td><td class="right " data-stat="pass_int" >1</td><td class="right iz" data-stat="pass_sacked" >0</td><td class="right iz" data-stat="pass_sacked_yds" >0</td><td class="right " data-stat="pass_yds_per_att" >5.7</td><td class="right " data-stat="pass_net_yds_per_att" >5.7</td><td class="right " data-stat="pass_cmp_perc" >52.8</td><td class="right " data-stat="pass_rating" >58.2</td><td class="right " data-stat="rush_att" >32</td><td class="right " data-stat="rush_yds" >112</td><td class="right " data-stat="rush_yds_per_att" >3.5</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >2</td><td class="right iz" data-stat="xpm" >0</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >6</td><td class="right " data-stat="punt_yds" >272</td><td class="right " data-stat="third_down_success" >3</td><td class="right " data-stat="third_down_att" >13</td><td class="right " data-stat="fourth_down_success" >2</td><td class="right " data-stat="fourth_down_att" >3</td><td class="right " data-stat="time_of_poss" >30:50</td></tr>
+<tr id="gamelog_opp2017.12" ><th scope="row" class="right " data-stat="week_num" csk="11" >12</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-11-26" >November 26</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201711260kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/buf/2017.htm">Buffalo Bills</a></td><td class="right " data-stat="pts_off" >10</td><td class="right " data-stat="pts_def" >16</td><td class="right " data-stat="pass_cmp" >19</td><td class="right " data-stat="pass_att" >29</td><td class="right " data-stat="pass_yds" >164</td><td class="right " data-stat="pass_td" >1</td><td class="right iz" data-stat="pass_int" >0</td><td class="right " data-stat="pass_sacked" >2</td><td class="right " data-stat="pass_sacked_yds" >19</td><td class="right " data-stat="pass_yds_per_att" >6.3</td><td class="right " data-stat="pass_net_yds_per_att" >5.3</td><td class="right " data-stat="pass_cmp_perc" >65.5</td><td class="right " data-stat="pass_rating" >91.7</td><td class="right " data-stat="rush_att" >37</td><td class="right " data-stat="rush_yds" >104</td><td class="right " data-stat="rush_yds_per_att" >2.8</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >3</td><td class="right " data-stat="fga" >4</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >7</td><td class="right " data-stat="punt_yds" >288</td><td class="right " data-stat="third_down_success" >6</td><td class="right " data-stat="third_down_att" >17</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >33:18</td></tr>
+<tr id="gamelog_opp2017.13" ><th scope="row" class="right " data-stat="week_num" csk="12" >13</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-12-03" >December 3</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712030nyj.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/nyj/2017.htm">New York Jets</a></td><td class="right " data-stat="pts_off" >31</td><td class="right " data-stat="pts_def" >38</td><td class="right " data-stat="pass_cmp" >26</td><td class="right " data-stat="pass_att" >36</td><td class="right " data-stat="pass_yds" >331</td><td class="right " data-stat="pass_td" >1</td><td class="right iz" data-stat="pass_int" >0</td><td class="right iz" data-stat="pass_sacked" >0</td><td class="right iz" data-stat="pass_sacked_yds" >0</td><td class="right " data-stat="pass_yds_per_att" >9.2</td><td class="right " data-stat="pass_net_yds_per_att" >9.2</td><td class="right " data-stat="pass_cmp_perc" >72.2</td><td class="right " data-stat="pass_rating" >109.8</td><td class="right " data-stat="rush_att" >49</td><td class="right " data-stat="rush_yds" >157</td><td class="right " data-stat="rush_yds_per_att" >3.2</td><td class="right " data-stat="rush_td" >3</td><td class="right " data-stat="fgm" >3</td><td class="right " data-stat="fga" >3</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >2</td><td class="right " data-stat="punt_yds" >73</td><td class="right " data-stat="third_down_success" >13</td><td class="right " data-stat="third_down_att" >20</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >42:49</td></tr>
+<tr id="gamelog_opp2017.14" ><th scope="row" class="right " data-stat="week_num" csk="13" >14</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-12-10" >December 10</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712100kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/rai/2017.htm">Oakland Raiders</a></td><td class="right " data-stat="pts_off" >26</td><td class="right " data-stat="pts_def" >15</td><td class="right " data-stat="pass_cmp" >24</td><td class="right " data-stat="pass_att" >41</td><td class="right " data-stat="pass_yds" >198</td><td class="right " data-stat="pass_td" >1</td><td class="right " data-stat="pass_int" >2</td><td class="right " data-stat="pass_sacked" >3</td><td class="right " data-stat="pass_sacked_yds" >13</td><td class="right " data-stat="pass_yds_per_att" >5.1</td><td class="right " data-stat="pass_net_yds_per_att" >4.5</td><td class="right " data-stat="pass_cmp_perc" >58.5</td><td class="right " data-stat="pass_rating" >58.8</td><td class="right " data-stat="rush_att" >11</td><td class="right " data-stat="rush_yds" >70</td><td class="right " data-stat="rush_yds_per_att" >6.4</td><td class="right " data-stat="rush_td" >1</td><td class="right iz" data-stat="fgm" >0</td><td class="right iz" data-stat="fga" >0</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >7</td><td class="right " data-stat="punt_yds" >286</td><td class="right " data-stat="third_down_success" >5</td><td class="right " data-stat="third_down_att" >13</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >1</td><td class="right " data-stat="time_of_poss" >23:20</td></tr>
+<tr id="gamelog_opp2017.15" ><th scope="row" class="right " data-stat="week_num" csk="14" >15</th><td class="left " data-stat="game_day_of_week" >Sat</td><td class="left " data-stat="game_date" csk="2017-12-16" >December 16</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712160kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/sdg/2017.htm">Los Angeles Chargers</a></td><td class="right " data-stat="pts_off" >30</td><td class="right " data-stat="pts_def" >13</td><td class="right " data-stat="pass_cmp" >20</td><td class="right " data-stat="pass_att" >36</td><td class="right " data-stat="pass_yds" >209</td><td class="right " data-stat="pass_td" >1</td><td class="right " data-stat="pass_int" >3</td><td class="right " data-stat="pass_sacked" >2</td><td class="right " data-stat="pass_sacked_yds" >18</td><td class="right " data-stat="pass_yds_per_att" >6.3</td><td class="right " data-stat="pass_net_yds_per_att" >5.5</td><td class="right " data-stat="pass_cmp_perc" >55.6</td><td class="right " data-stat="pass_rating" >47.1</td><td class="right " data-stat="rush_att" >22</td><td class="right " data-stat="rush_yds" >98</td><td class="right " data-stat="rush_yds_per_att" >4.5</td><td class="right " data-stat="rush_td" >1</td><td class="right iz" data-stat="fgm" >0</td><td class="right iz" data-stat="fga" >0</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >2</td><td class="right " data-stat="punt" >3</td><td class="right " data-stat="punt_yds" >149</td><td class="right " data-stat="third_down_success" >4</td><td class="right " data-stat="third_down_att" >11</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >2</td><td class="right " data-stat="time_of_poss" >26:39</td></tr>
+<tr id="gamelog_opp2017.16" ><th scope="row" class="right " data-stat="week_num" csk="15" >16</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-12-24" >December 24</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712240kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/mia/2017.htm">Miami Dolphins</a></td><td class="right " data-stat="pts_off" >29</td><td class="right " data-stat="pts_def" >13</td><td class="right " data-stat="pass_cmp" >19</td><td class="right " data-stat="pass_att" >38</td><td class="right " data-stat="pass_yds" >286</td><td class="right " data-stat="pass_td" >1</td><td class="right iz" data-stat="pass_int" >0</td><td class="right iz" data-stat="pass_sacked" >0</td><td class="right iz" data-stat="pass_sacked_yds" >0</td><td class="right " data-stat="pass_yds_per_att" >7.5</td><td class="right " data-stat="pass_net_yds_per_att" >7.5</td><td class="right " data-stat="pass_cmp_perc" >50.0</td><td class="right " data-stat="pass_rating" >83.9</td><td class="right " data-stat="rush_att" >16</td><td class="right " data-stat="rush_yds" >59</td><td class="right " data-stat="rush_yds_per_att" >3.7</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >2</td><td class="right " data-stat="fga" >3</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >2</td><td class="right " data-stat="punt_yds" >59</td><td class="right iz" data-stat="third_down_success" >0</td><td class="right " data-stat="third_down_att" >8</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right " data-stat="fourth_down_att" >2</td><td class="right " data-stat="time_of_poss" >22:07</td></tr>
+<tr id="gamelog_opp2017.17" ><th scope="row" class="right " data-stat="week_num" csk="16" >17</th><td class="left " data-stat="game_day_of_week" >Sun</td><td class="left " data-stat="game_date" csk="2017-12-31" >December 31</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201712310den.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >W</td><td class="left iz" data-stat="overtime" ></td><td class="right " data-stat="game_location" >@</td><td class="left " data-stat="opp" ><a href="/teams/den/2017.htm">Denver Broncos</a></td><td class="right " data-stat="pts_off" >27</td><td class="right " data-stat="pts_def" >24</td><td class="right " data-stat="pass_cmp" >21</td><td class="right " data-stat="pass_att" >31</td><td class="right " data-stat="pass_yds" >226</td><td class="right " data-stat="pass_td" >2</td><td class="right " data-stat="pass_int" >2</td><td class="right " data-stat="pass_sacked" >5</td><td class="right " data-stat="pass_sacked_yds" >28</td><td class="right " data-stat="pass_yds_per_att" >8.2</td><td class="right " data-stat="pass_net_yds_per_att" >6.3</td><td class="right " data-stat="pass_cmp_perc" >67.7</td><td class="right " data-stat="pass_rating" >83.5</td><td class="right " data-stat="rush_att" >29</td><td class="right " data-stat="rush_yds" >110</td><td class="right " data-stat="rush_yds_per_att" >3.8</td><td class="right iz" data-stat="rush_td" >0</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >1</td><td class="right " data-stat="xpm" >3</td><td class="right " data-stat="xpa" >3</td><td class="right " data-stat="punt" >4</td><td class="right " data-stat="punt_yds" >157</td><td class="right " data-stat="third_down_success" >5</td><td class="right " data-stat="third_down_att" >12</td><td class="right " data-stat="fourth_down_success" >1</td><td class="right " data-stat="fourth_down_att" >2</td><td class="right " data-stat="time_of_poss" >30:57</td></tr>
+
+</table>
+
+
+</div>
+
+<div class="placeholder"></div>
+
+</div>
+
+            
+            
+            
+         
+      
+         
+            
+<div id="all_playoff_gamelog_opp2017" class="table_wrapper setup_long long">
+
+<div class="section_heading assoc_playoff_gamelog_opp2017" id="playoff_gamelog_opp2017_sh">
+  <span class="section_anchor" id="playoff_gamelog_opp2017_link" data-label="Opponent Playoffs Game Logs"></span><h2>Opponent Playoffs Game Logs</h2>    <div class="section_heading_text">
+      <ul>
+      </ul>
+    </div>
+    		
+</div>
+<div class="table_container" id="div_playoff_gamelog_opp2017">
+    
+    <table class="row_summable sortable stats_table" id="playoff_gamelog_opp2017" data-cols-to-freeze="1,3">
+    <caption>Opponent Playoffs Game Logs Table</caption>
+    
+
+   <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+   <thead>
+
+      
+      <tr class="over_header">
+         <th aria-label="" data-stat="" colspan="8" class=" over_header center" ></th>
+         <th aria-label="" data-stat="header_score" colspan="2" class=" over_header center" >Score</th>
+         <th aria-label="" data-stat="header_pass" colspan="11" class=" over_header center" >Passing</th>
+         <th aria-label="" data-stat="header_rush" colspan="4" class=" over_header center" >Rushing</th>
+         <th aria-label="" data-stat="header_scoring" colspan="4" class=" over_header center" >Scoring</th>
+         <th aria-label="" data-stat="header_punt" colspan="2" class=" over_header center" >Punting</th>
+         <th aria-label="" data-stat="header_downs" colspan="4" class=" over_header center" >Downs</th><th></th>
+      </tr>
+            
+      <tr>
+         <th aria-label="Week" data-stat="week_num" scope="col" class=" poptip sort_default_asc sorttable_nosort center" data-tip="Week number in season" >Week</th>
+         <th aria-label="Day" data-stat="game_day_of_week" scope="col" class=" poptip sort_default_asc left" >Day</th>
+         <th aria-label="Date" data-stat="game_date" scope="col" class=" poptip sort_default_asc center" >Date</th>
+         <th aria-label="" data-stat="boxscore_word" scope="col" class=" poptip sort_default_asc center" ></th>
+         <th aria-label="" data-stat="game_outcome" scope="col" class=" poptip center" ></th>
+         <th aria-label="OT" data-stat="overtime" scope="col" class=" poptip sort_default_asc left" >OT</th>
+         <th aria-label="" data-stat="game_location" scope="col" class=" poptip sort_default_asc center" ></th>
+         <th aria-label="Opp" data-stat="opp" scope="col" class=" poptip sort_default_asc center" >Opp</th>
+         <th aria-label="Tm" data-stat="pts_off" scope="col" class=" poptip center" data-tip="Points scored" data-over-header="Score" >Tm</th>
+         <th aria-label="Opp" data-stat="pts_def" scope="col" class=" poptip center" data-tip="Points allowed" data-over-header="Score" >Opp</th>
+         <th aria-label="Passes Completed" data-stat="pass_cmp" scope="col" class=" poptip center" data-tip="Passes completed" data-over-header="Passing" >Cmp</th>
+         <th aria-label="Pass Attempts" data-stat="pass_att" scope="col" class=" poptip center" data-tip="Passes attempted" data-over-header="Passing" >Att</th>
+         <th aria-label="Passing Yds" data-stat="pass_yds" scope="col" class=" poptip center" data-tip="Yards Gained by Passing<br>For teams, sack yardage is deducted from this total" data-over-header="Passing" >Yds</th>
+         <th aria-label="Passing TD" data-stat="pass_td" scope="col" class=" poptip center" data-tip="Passing Touchdowns" data-over-header="Passing" >TD</th>
+         <th aria-label="Passes Intercepted" data-stat="pass_int" scope="col" class=" poptip center" data-tip="Interceptions thrown" data-over-header="Passing" >Int</th>
+         <th aria-label="Sacked " data-stat="pass_sacked" scope="col" class=" poptip center" data-tip="Times Sacked (official since 1969, complete NFL coverage since 1963, partial NFL coverage from 1960-62)" data-over-header="Passing" >Sk</th>
+         <th aria-label="Sacked Yds Lost" data-stat="pass_sacked_yds" scope="col" class=" poptip center" data-tip="Yards lost due to sacks (official since 1969, complete NFL coverage since 1960)" data-over-header="Passing" >Yds</th>
+         <th aria-label="Yds/Pass Att" data-stat="pass_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Yards gained per pass attempt <br>Minimum 14 attempts per scheduled game to qualify as leader.<br>Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Yds/Pass Att" >Y/A</th>
+         <th aria-label="Net Yds/Pass Att" data-stat="pass_net_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Net Yards gained per pass attempt<br />(Passing Yards - Sack Yards) / (Passes Attempted + Times Sacked)<br />Minimum 14 attempts per schedule game to qualify as leader.<br />Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Net Yds/Pass Att" >NY/A</th>
+         <th aria-label="Pass Completion %" data-stat="pass_cmp_perc" scope="col" class=" poptip hide_non_quals center" data-tip="Percentage of Passes Completed<br>Minimum 14 attempts per scheduled game to qualify as leader.<br />Minimum 1500 pass attempts to qualify as career leader." data-over-header="Passing" data-filter="1" data-name="Pass Completion %" >Cmp%</th>
+         <th aria-label="Passer Rating" data-stat="pass_rating" scope="col" class=" poptip hide_non_quals center" data-tip="Quarterback Rating, see glossary for details<br>Different ratings are used by the NFL and NCAA.<br />Minimum 1500 pass attempts to qualify as career leader, minimum 150 pass attempts for playoffs leader." data-over-header="Passing" data-filter="1" data-name="Passer Rating" >Rate</th>
+         <th aria-label="Rushing Att" data-stat="rush_att" scope="col" class=" poptip center" data-tip="Rushing Attempts (sacks not included in NFL)" data-over-header="Rushing" >Att</th>
+         <th aria-label="Rushing Yds" data-stat="rush_yds" scope="col" class=" poptip center" data-tip="Rushing Yards Gained (sack yardage is not included by NFL)" data-over-header="Rushing" >Yds</th>
+         <th aria-label="Yds/Rushing Att" data-stat="rush_yds_per_att" scope="col" class=" poptip hide_non_quals center" data-tip="Rushing Yards per Attempt<br>Minimum 6.25 rushes per game scheduled to qualify as leader.<br />Minimum 750 rushes to qualify as career leader." data-over-header="Rushing" data-filter="1" data-name="Yds/Rushing Att" >Y/A</th>
+         <th aria-label="Rushing TD" data-stat="rush_td" scope="col" class=" poptip center" data-tip="Rushing Touchdowns" data-over-header="Rushing" >TD</th>
+         <th aria-label="Field Goals Made" data-stat="fgm" scope="col" class=" poptip center" data-tip="Field Goals Made" data-over-header="Scoring" >FGM</th>
+         <th aria-label="Field Goals Att" data-stat="fga" scope="col" class=" poptip center" data-tip="Field Goals Attempted" data-over-header="Scoring" >FGA</th>
+         <th aria-label="Extra Pt Made" data-stat="xpm" scope="col" class=" poptip center" data-tip="Extra Points Made" data-over-header="Scoring" >XPM</th>
+         <th aria-label="Extra Pt Att" data-stat="xpa" scope="col" class=" poptip center" data-tip="Extra Points Attempted" data-over-header="Scoring" >XPA</th>
+         <th aria-label="Punts" data-stat="punt" scope="col" class=" poptip center" data-tip="Times Punted" data-over-header="Punting" >Pnt</th>
+         <th aria-label="Punting Yds" data-stat="punt_yds" scope="col" class=" poptip center" data-tip="Total Punt Yardage" data-over-header="Punting" >Yds</th>
+         <th aria-label="3rd Down Conversions" data-stat="third_down_success" scope="col" class=" poptip center" data-tip="3rd Down Conversions in game" data-over-header="Downs" >3DConv</th>
+         <th aria-label="3rd Down Attempts" data-stat="third_down_att" scope="col" class=" poptip center" data-tip="3rd Down Attempts in game" data-over-header="Downs" >3DAtt</th>
+         <th aria-label="4th Down Conversions" data-stat="fourth_down_success" scope="col" class=" poptip center" data-tip="4th Down Conversions in game" data-over-header="Downs" >4DConv</th>
+         <th aria-label="4th Down Attempts" data-stat="fourth_down_att" scope="col" class=" poptip center" data-tip="4th Down Attempts in game" data-over-header="Downs" >4DAtt</th>
+         <th aria-label="Time of Possession" data-stat="time_of_poss" scope="col" class=" poptip center" data-tip="Offensive time of possesion" data-over-header="Tot Yds &amp; TO" >ToP</th>
+      </tr>
+      </thead>
+<tbody><tr id="playoff_gamelog_opp2017.18" ><th scope="row" class="right " data-stat="week_num" csk="17" >18</th><td class="left " data-stat="game_day_of_week" >Sat</td><td class="left " data-stat="game_date" csk="2018-01-06" >January 6</td><td class="center " data-stat="boxscore_word" ><a href="/boxscores/201801060kan.htm">boxscore</a></td><td class="right " data-stat="game_outcome" >L</td><td class="left iz" data-stat="overtime" ></td><td class="right iz" data-stat="game_location" ></td><td class="left " data-stat="opp" ><a href="/teams/oti/2017.htm">Tennessee Titans</a></td><td class="right " data-stat="pts_off" >21</td><td class="right " data-stat="pts_def" >22</td><td class="right " data-stat="pass_cmp" >19</td><td class="right " data-stat="pass_att" >31</td><td class="right " data-stat="pass_yds" >195</td><td class="right " data-stat="pass_td" >2</td><td class="right " data-stat="pass_int" >1</td><td class="right " data-stat="pass_sacked" >2</td><td class="right " data-stat="pass_sacked_yds" >10</td><td class="right " data-stat="pass_yds_per_att" >6.6</td><td class="right " data-stat="pass_net_yds_per_att" >5.9</td><td class="right " data-stat="pass_cmp_perc" >61.3</td><td class="right " data-stat="pass_rating" >87.4</td><td class="right " data-stat="rush_att" >31</td><td class="right " data-stat="rush_yds" >202</td><td class="right " data-stat="rush_yds_per_att" >6.5</td><td class="right " data-stat="rush_td" >1</td><td class="right " data-stat="fgm" >1</td><td class="right " data-stat="fga" >1</td><td class="right " data-stat="xpm" >1</td><td class="right " data-stat="xpa" >1</td><td class="right " data-stat="punt" >3</td><td class="right " data-stat="punt_yds" >131</td><td class="right " data-stat="third_down_success" >8</td><td class="right " data-stat="third_down_att" >13</td><td class="right iz" data-stat="fourth_down_success" >0</td><td class="right iz" data-stat="fourth_down_att" >0</td><td class="right " data-stat="time_of_poss" >32:28</td></tr>
+
+</table>
+
+
+</div>
+
+<div class="placeholder"></div>
+
+</div>
+
+            
+            
+            
+         
+      
+
+<!-- global.nonempty_tables_num: 4, table_count: 4 -->
+   <!-- no Local/Partials/NoteBottom.tt2 -->
+<div id="bottom_nav" class="section_wrapper">
+<div class="section_heading"><span data-no-inpage="1" class="section_anchor" id="inner_nav_bottom_link" data-label="More 2017 Chiefs Pages"></span><h2>More 2017 Chiefs Pages</h2></div>
+<div class="section_content" id="bottom_nav_container">
+
+  <p><a href="/teams/kan">Chiefs Franchise Pages</a></p>
+  <p><a href="/teams/kan/2017.htm">2017 Chiefs Statistics</a></p>
+  
+        <ul class="">
+          <li><a href="/teams/kan/2017.htm">2017 Statistics</a></li>
+          <li><a href="/teams/kan/2017_roster.htm">Roster &amp; Players</a></li>
+          <li><a href="/teams/kan/2017/gamelog/">Games &amp; Schedule</a></li>
+          <li><a href="/teams/kan/2017_draft.htm">Team Draftees</a></li>
+          <li><a href="/teams/kan/2017_injuries.htm">Injury Report</a></li>
+          <li><a href="/teams/kan/2017_splits.htm">Offensive Splits</a></li>
+          <li><a href="/teams/kan/2017_opp_splits.htm">Defensive Splits</a></li>
+          <li><a href="/teams/kan/2017_travel.htm">Travel Map</a></li>
+          <li><a href="/teams/kan/2017-snap-counts.htm">Snap Counts</a></li>
+          <li><a href="/teams/kan/2017_lines.htm">Vegas Lines</a></li>
+          <li><a href="/teams/kan/2017_trades.htm">Trades</a></li>
+        </ul></div></div>
+
+   
+
+
+<!-- fs_footer -->
+<div class="adblock">
+<!-- div#fs_fs_footer  -->
+<div align="center" id="div-gpt-ad-728x90-Footer"  data-freestar-ad="__300x250 __970x90">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-728x90-Footer');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-728x90-Footer'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_footer -->
+
+</div>
+
+
+
+
+
+</div><!-- div#content -->
+
+
+<div id="footer" role="contentinfo">
+	<div id="footer_header">
+		 <ul class="bullets-inline"><li class="user logged_in">Welcome <span class="username"></span>&nbsp;&#183;&nbsp;<a href="https://stathead.com/profile/?utm_source=pfr&amp;utm_medium=sr_xsite&amp;utm_campaign=2023_01_srnav_account">Your Account</a></li>
+<li class="user logged_in"><a class="logout" onclick="sr_auth_logout_page_elements();if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/profile/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" onclick="if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/users/login.cgi?token=1">Login</a></li>
+<li class="user not_logged_in"><a href="https://stathead.com/users/signup.cgi">Create Account</a></li>
+</ul>
+		 <div class="breadcrumbs">You are here: <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/"><span itemprop="name">PFR Home Page</span></a> <meta itemprop="position" content="1" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/teams/"><span itemprop="name">Teams</span></a> <meta itemprop="position" content="2" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/teams/kan/"><span itemprop="name">Kansas City Chiefs</span></a> <meta itemprop="position" content="3" /></span> &gt; <strong>2017 Games and Schedule</strong></div>
+	</div><!-- div#footer_header -->
+
+	<div id="footer_general">
+		<div id="site_menu" role="navigation" aria-label="complete site index">
+			
+			
+<div class="section_heading assoc_site_menu" id="site_menu_sh">
+  <span class="section_anchor" id="site_menu_link" data-label="Full Site Menu"></span><h2>Full Site Menu</h2>    <div class="section_heading_text">
+      <ul><li><a data-scroll href="#header">Return to Top</a></li>
+      </ul>
+    </div>
+    		
+</div>
+			
+				    <ul>
+	<li><a href="/players">Players</a>
+	    <div>In the News: <a title="Aaron Rodgers" href="/players/R/RodgAa00.htm">Aaron Rodgers</a>, <a title="Lamar Jackson" href="/players/J/JackLa00.htm">Lamar Jackson</a>, <a title="Derek Carr" href="/players/C/CarrDe02.htm">Derek Carr</a>, <a title="Jimmy Garoppolo" href="/players/G/GaroJi00.htm">Jimmy Garoppolo</a>, <a title="Brock Purdy" href="/players/P/PurdBr00.htm">Brock Purdy</a>, <a title="Adam Thielen" href="/players/T/ThieAd00.htm">Adam Thielen</a> <a href="/players/">...</a></div>
+	<div>Popular: <a title="Tom Brady" href="/players/B/BradTo00.htm">Tom Brady</a>, <a title="Cam Newton" href="/players/N/NewtCa00.htm">Cam Newton</a>, <a title="Aaron Donald" href="/players/D/DonaAa00.htm">Aaron Donald</a>, <a title="Russell Wilson" href="/players/W/WilsRu00.htm">Russell Wilson</a>, <a title="Aaron Rodgers" href="/players/R/RodgAa00.htm">Aaron Rodgers</a>, <a title="Odell Beckham" href="/players/B/BeckOd00.htm">Odell Beckham Jr.</a>, <a title="J.J. Watt" href="/players/W/WattJ.00.htm">J.J. Watt</a>, <a title="Peyton Manning" href="/players/M/MannPe00.htm">Peyton Manning</a>, <a title="Patrick Mahomes" href="/players/M/MahoPa00.htm">Patrick Mahomes</a>, <a title="Julio Jones" href="/players/J/JoneJu02.htm">Julio Jones</a>, <a title="Antonio Brown" href="/players/B/BrowAn04.htm">Antonio Brown</a>, <a title="Ben Roethlisberger" href="/players/R/RoetBe00.htm">Ben Roethlisberger</a>, <a title="Drew Brees" href="/players/B/BreeDr00.htm">Drew Brees</a>, <a title="Todd Gurley" href="/players/G/GurlTo01.htm">Todd Gurley</a> <a href="/players/">...</a></div>
+
+	<div><a href="/hof/">Hall of Famers</a>, <a href="/probowl/">Pro Bowlers</a>, <a href="/awards/ap-nfl-mvp-award.htm">MVPs</a>, <a href="/friv/linkify.cgi">Player Linker Tool</a> ...</div>
+	</li>
+
+	<li><a href="/teams/">Teams</a>
+	<div>AFC East: <a href="/teams/buf/2022.htm">Bills</a>, <a href="/teams/mia/2022.htm">Dolphins</a>, <a href="/teams/nwe/2022.htm">Patriots</a>, <a href="/teams/nyj/2022.htm">Jets</a></div>
+<div>AFC North: <a href="/teams/cin/2022.htm">Bengals</a>, <a href="/teams/rav/2022.htm">Ravens</a>, <a href="/teams/pit/2022.htm">Steelers</a>, <a href="/teams/cle/2022.htm">Browns</a></div>
+<div>AFC South: <a href="/teams/jax/2022.htm">Jaguars</a>, <a href="/teams/oti/2022.htm">Titans</a>, <a href="/teams/clt/2022.htm">Colts</a>, <a href="/teams/htx/2022.htm">Texans</a></div>
+<div>AFC West: <a href="/teams/kan/2022.htm">Chiefs</a>, <a href="/teams/sdg/2022.htm">Chargers</a>, <a href="/teams/rai/2022.htm">Raiders</a>, <a href="/teams/den/2022.htm">Broncos</a></div>
+<div>NFC East: <a href="/teams/phi/2022.htm">Eagles</a>, <a href="/teams/dal/2022.htm">Cowboys</a>, <a href="/teams/nyg/2022.htm">Giants</a>, <a href="/teams/was/2022.htm">Commanders</a></div>
+<div>NFC North: <a href="/teams/min/2022.htm">Vikings</a>, <a href="/teams/det/2022.htm">Lions</a>, <a href="/teams/gnb/2022.htm">Packers</a>, <a href="/teams/chi/2022.htm">Bears</a></div>
+<div>NFC South: <a href="/teams/tam/2022.htm">Buccaneers</a>, <a href="/teams/car/2022.htm">Panthers</a>, <a href="/teams/nor/2022.htm">Saints</a>, <a href="/teams/atl/2022.htm">Falcons</a></div>
+<div>NFC West: <a href="/teams/sfo/2022.htm">49ers</a>, <a href="/teams/sea/2022.htm">Seahawks</a>, <a href="/teams/ram/2022.htm">Rams</a>, <a href="/teams/crd/2022.htm">Cardinals</a></div>
+
+	</li>
+
+	<li><a href="/years/">Seasons</a>
+	<div><a href="/years/2022/">Current Season</a>, <a href="/years/2022/games.htm">Current Season Schedule</a>, <a href="/years/2022/leaders.htm">Current Leaders</a></div><div><a href="/years/2021/">2021</a>, <a href="/years/2020/">2020</a>, <a href="/years/2019/">2019</a>, <a href="/years/2018/">2018</a>, <a href="/years/2017/">2017</a>, <a href="/years/">...</a></div>
+	</li>
+
+	<li><a href="/leaders/">NFL Leaders</a>
+	<div><a href="/leaders/pass_yds_career.htm">Career Passing Yards</a>, <a href="/leaders/rush_td_single_season.htm">Single Season Rush TD</a>, <a href="/leaders/sacks_single_game.htm">Single Game Sacks</a> ...</div>
+	</li>
+
+	<li><a href="/boxscores/">NFL Scores</a>
+	<div><a href="/boxscores/game-scores.htm">All-time Scores</a>, <a href="/boxscores/game_scores_find.cgi">Find a Score</a> ...</div>
+	</li>
+
+	<li><a href="/draft/">NFL Draft</a>
+	<div><a href="/years/2022/draft.htm">2022 Draft</a>, <a href="https://stathead.com/football/draft-finder.cgi">Draft Finder</a>, <a href="/draft/">Draft History</a> ...</div>
+	</li>
+
+	<li>
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Stathead</a>
+		<div><strong>Player Finders</strong>: 
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/player-season-finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Season Finder</a>, 
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/player-game-finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Game Finder</a>, 
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/player-streak-finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Streak Finder</a>,
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/player-span-finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Span Finder</a>,
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/player_split_finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Split Finder</a>
+		</div>
+		<div><strong>Team Finders</strong>: 
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/team-season-finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Season Finder</a>, 
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/team-game-finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Game Finder</a>, 
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/team-streak-finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Streak Finder</a>,
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/team-span-finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Span Finder</a>,
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/split_finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Split Finder</a>
+		</div>
+		<div><strong>Other Finders</strong>: 
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/ptd_finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Touchdown Finder</a>,
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/fg_finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Field Goal Finder</a>,
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/play_finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Game Play Finder</a>,
+		<a target='_blank' rel='noopener' href="https://stathead.com/football/drive_finder.cgi?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footernav_stathead">Drive Finder</a>
+		</div>
+	</li>
+
+	<li><a href="/super-bowl/">Super Bowl Winners</a>
+	<div><a href="/super-bowl/leaders.htm">Super Bowl Leaders</a>, <a href="/super-bowl/standings.htm">Super Bowl Standings</a> ...</div>
+	</li>
+
+	<li><a href="/schools/">Schools</a>
+	<div><a href="/schools/">All Player Colleges</a>, <a href="/schools/high_schools.cgi">High Schools</a> ...</div>
+	</li>
+
+	<li><a href="/coaches/">NFL Coaches</a>
+	<div>Active Coaches: <a href="/coaches/BeliBi0.htm">Bill Belichick</a>, <a href="/coaches/ReidAn0.htm">Andy Reid</a>, <a href="/coaches/TomlMi0.htm">Mike Tomlin</a>, <a href="/coaches/CarrPe0.htm">Pete Carroll</a> ...</div><div>Historical Coaches: <a href="/coaches/ShulDo0.htm">Don Shula</a>, <a href="/coaches/HalaGe0.htm">George Halas</a>, <a href="/coaches/LandTo0.htm">Tom Landry</a>, <a href="/coaches/LambCu0.htm">Curly Lambeau</a> ...</div>
+	</li>
+
+	<li><a href="/executives/">Executives</a>
+	<div><a href="/executives/AdamBu0.htm">Bud Adams</a>, <a href="/executives/PiolSc0.htm">Scott Pioli</a>, <a href="/executives/HalaGe0.htm">George Halas</a> ...</div>
+	</li>
+
+	<li><a href="/officials/">NFL Officials</a>
+	<div><a href="/officials/HochEd0r.htm">Ed Hochuli</a>, <a href="/officials/SterTo0r.htm">Tony Steratore</a>, <a href="/officials/McAuTe0r.htm">Terry McAulay</a> ...</div>
+	</li>
+
+	<li><a href="/fantasy/">Fantasy Football Stats</a>
+	<div><a href="/fantasy/QB-fantasy-matchups.htm">Current Fantasy Matchups</a>, <a href="/years/2022/fantasy-points-against-QB.htm">Fantasy Points Allowed</a> ...</div>
+	</li>
+	<li><a href="/stadiums/">Stadiums</a>
+	<div><a href="/stadiums/GNB00.htm">Lambeau Field</a>, <a href="/stadiums/NOR00.htm">Superdome</a>, <a href="/stadiums/SFO00.htm">Candlestick Park</a> ...</div>
+	</li>
+
+	<li><a href="/awards/">NFL Awards</a>
+	<div><a href="/hof/">Pro Football Hall of Fame</a>, <a href="/awards/ap-nfl-mvp-award.htm">AP NFL MVP</a>, <a href="/probowl/">Pro Bowl</a> ...</div>
+	</li>
+
+	<li><a href="/friv/">Frivolities</a>
+	<div><a href="/linker">Player Linker Tool</a>, <a href="/friv/birthdays.cgi">Birthdays</a>, <a href="/players/uniform.cgi">Uniform Numbers</a> ...</div>
+	</li>
+
+  <li><a href="/about/">About</a>
+    <div><a href="/about/glossary.htm">Glossary</a>, <a href="/about/minimums.htm">Stat Minimums</a>, <a href="/about/nfl-football-faqs.html">Frequently Asked Questions about the NFL and Football</a> ...</div>
+  </li>
+	</ul>
+
+			
+   		        
+
+      <ul>
+       <li></li>      
+       <li><a href="https://www.pro-football-reference.com/pfr-blog/">Pro-Football-Reference.com Blog and Articles</a></li>
+
+	        </div><!-- div#site_menu -->
+		<div>
+			<div id="social" class="icon_group noload">
+	
+<div class="section_heading assoc_" id="_sh">
+  <span class="section_anchor" id="_link" data-label="We're Social...for Statheads" data-no-inpage="1"></span><h2>We're Social...for Statheads</h2>		
+</div>
+	<a href="tel://888-512-8907" data-tip="Call us on Telephone" data-label="Telephone" aria-label="Telephone" class="poptip"><svg class="icon phone"><use xlink:href="#ic-phone"></use></svg></a>
+	<a href="//www.sports-reference.com/blog/" data-tip="The Sports Reference Blog" data-label="Our Blog" aria-label="Our Blog" class="poptip"><svg class="icon wordpress"><use xlink:href="#ic-wordpress"></use></svg></a>
+	<a href="https://www.sports-reference.com/blog/feed/" data-tip="Our Blog's RSS Feed" data-label="RSS Feed" aria-label="RSS Feed" class="poptip"><svg class="icon rss"><use xlink:href="#ic-rss"></use></svg></a>
+		<a href="https://www.facebook.com/Pro.Football.Reference" data-tip="Pro-Football-Reference.com at Facebook" data-label="Facebook" aria-label="Facebook" class="poptip"><svg class="icon facebook"><use xlink:href="#ic-facebook"></use></svg></a>
+		<a href="https://twitter.com/pfref" data-tip="Pro-Football-Reference.com at Twitter" data-label="Twitter" aria-label="Twitter" class="poptip"><svg class="icon twitter"><use xlink:href="#ic-twitter"></use></svg></a>
+		<a href="https://instagram.com/profootballreference" data-tip="Pro-Football-Reference.com at Instagram" data-label="Instagram" aria-label="Instagram" class="poptip"><svg class="icon instagram"><use xlink:href="#ic-instagram"></use></svg></a>
+		<a href="https://www.tiktok.com/@profootballreference" data-tip="Pro-Football-Reference.com at TikTok" data-label="TikTok" aria-label="TikTok" class="poptip"><svg class="icon tiktok"><use xlink:href="#ic-tiktok"></use></svg></a>
+	<a href="https://reddit.com/r/SportsReference" data-tip="Reddit/r/SportsReference" data-label="Reddit/r/SR" aria-label="Reddit/r/SR" class="poptip"><svg class="icon reddit"><use xlink:href="#ic-reddit"></use></svg></a>
+	<a href="https://www.youtube.com/user/sportsreference" data-tip="YouTube/SportsReference" data-label="YouTube" aria-label="YouTube" class="poptip"><svg class="icon youtube"><use xlink:href="#ic-youtube"></use></svg></a>
+	<a href="https://www.linkedin.com/company/sports-reference-llc" data-tip="Follow SR on LinkedIn" data-label="LinkedIn" aria-label="LinkedIn" class="poptip"><svg class="icon linkedin"><use xlink:href="#ic-linkedin"></use></svg></a>
+	<a href="https://www.paypal.me/sportsref" data-tip="Send us money via PayPal" data-label="PayPal" aria-label="PayPal" class="poptip"><svg class="icon paypal"><use xlink:href="#ic-paypal"></use></svg></a>
+
+<p>Every <a href="https://www.sports-reference.com/blog/sports-reference-social-media/">Sports Reference Social Media Account</a></p>
+<p><strong>Site Last Updated:</strong> Tuesday, March 14,  6:33AM
+</p>
+<p><a href="https://www.sports-reference.com/feedback/" class="button" style="display: block">Question, Comment, Feedback, or Correction?</a></p>
+
+<p><a style="display: block" href="https://www.pro-football-reference.com/email" class="button">Subscribe to our Free Email Newsletter</a></p>
+
+
+<p><a style="background-color:#7e3e89; color: #fff;" href="https://stathead.com/sport/football/?utm_medium=sr_xsite&utm_source=pfr&utm_campaign=2023_01_footerbttn_stathead" class="button alt">Subscribe to Stathead Football: Get your first month FREE<br><em>Your All-Access Ticket to the Pro Football Reference Database</em></a></p>
+
+
+<p><a href="https://www.sports-reference.com/blog/ways-sports-reference-can-help-your-website/?utm_medium=sr&utm_source=pfr&utm_campaign=site-footer-ways-help">Do you have a sports website? Or write about sports? We have tools and resources that can help you use sports data.  Find out more.</a></p>
+
+
+</div><!-- div#social -->
+
+			<div id="tips_tricks">
+   
+<div class="section_heading assoc_tips" id="tips_sh">
+  <span class="section_anchor" id="tips_link" data-label="FAQs, Tip &amp; Tricks" data-no-inpage="1"></span><h2>FAQs, Tip &amp; Tricks</h2>		
+</div>
+   <ul>
+<li>Learn about the <a href="https://www.pro-football-reference.com/blog/index37a8.html">Approximate Value Formula</a></li>
+<li>Details on the Pro Football Reference <a href="https://www.pro-football-reference.com/about/win_prob.htm">Win Probability</a></li>
+
+
+           <li><a href="//www.sports-reference.com/blog/category/tips-and-tricks/">Tips and Tricks from our Blog.</a></li>
+           <li><a href="/linker/">Do you have a blog? Join our linker program.</a></li>
+	   <li><a href="https://www.sports-reference.com/blog/category/stathead-tutorial-series/">Watch our How-To Videos to Become a Stathead</a></li>
+	   <li><a href="//stathead.com/?ref=pfr">Subscribe to Stathead and get access to more data than you can imagine</a></li>
+   </ul>
+</div><!-- div#tips_tricks -->
+
+			<div id="credits">
+				<p>All logos are the trademark &amp; property of their owners and not Sports Reference LLC.  We present them here for purely educational purposes.
+				<a href="https://www.sports-reference.com/blog/2016/06/redesign-team-and-league-logos-courtesy-sportslogos-net/">Our reasoning for presenting offensive logos.</a></p>
+				<p>
+					
+					Logos were compiled by the amazing <a href="http://sportslogos.net/">SportsLogos.net.</a>
+				</p>
+				
+<div class="notice">
+<p>Data Provided By
+	<a href="https://www.sportradar.com/" rel="nofollow"><img alt="SportRadar" border=0 width=275 src="https://cdn.ssref.net/req/202303021/images/klecko/sportradar.png"  style="background-color:#666; padding:.5em; border-radius:.25em"></a>
+	</p>
+	
+	
+</div>
+
+     <p>Copyright &copy; 2000-2023 <a href="//www.sports-reference.com/">Sports Reference LLC</a>. All rights reserved.</p>
+
+     <p>The SPORTS REFERENCE and STATHEAD trademarks are owned exclusively by Sports Reference LLC. Use without license or authorization is expressly prohibited.
+<p>Please see our <a href="https://www.pro-football-reference.com/about/sources.htm">Contributors and Sources page</a> for data source details.</p>
+
+			</div><!-- div#credits -->
+		</div>
+	</div>
+
+	
+<ul id="site_dirs" class="notranslate bullets-inline">
+	<li><a href="https://www.sports-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer"><svg height="15px" width="20px"><use xlink:href="#ic-sr-pennant"></use></svg> Sports&nbsp;Reference&#8239;&reg;</a></li>
+	<li><a href="https://www.baseball-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Baseball</a></li>
+	<li class="current"><a href="https://www.pro-football-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Football</a> <a href="https://www.sports-reference.com/cfb/">(college)</a></li>
+	<li><a href="https://www.basketball-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Basketball</a> <a href="https://www.sports-reference.com/cbb/">(college)</a></li>
+	<li><a href="https://www.hockey-reference.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Hockey</a></li>
+
+
+	
+	
+	
+	<li><a href="https://fbref.com/en/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Soccer</a></li>
+
+	<li><a href="https://www.sports-reference.com/blog/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Blog</a></li>
+
+    <li><a href="https://stathead.com/?utm_source=pfr&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Stathead&#8239;&reg;</a></li>
+
+
+</ul>
+
+	<div id="about">
+  <a href="//www.sports-reference.com/about.html">About</a> &bull;
+  <a href="//www.sports-reference.com/termsofuse.html">Conditions &amp; Terms of Service</a> &bull;
+  <a href="//www.sports-reference.com/advertise.html">Advertise With Us</a>
+ &bull;
+  <a href="//www.sports-reference.com/jobs.html">Jobs at SR</a>
+  <br><br>
+Sports Reference Purpose: We will be the trusted source of information and tools that inspire and empower users to enjoy, understand, and share the sports they love.
+  <br><br>
+  <a href="//www.sports-reference.com/privacy.html">Privacy Policy</a> &bull;
+  <a href="//www.sports-reference.com/gambling-revenue-policy.html">Gambling Revenue Policy</a> &bull;
+  <a href="//www.sports-reference.com/accessibility-policy.html">Accessibility Policy</a> &bull;
+  <a href="//www.sports-reference.com/data_use.html">Use of Data</a>
+  </div>
+  <!-- div#about -->
+</div><!-- div#footer -->
+
+</div><!-- div#wrap -->
+<!-- yes sticky url:  https://www.pro-football-reference.com/teams/kan/2017/gamelog/ -->
+<div id="fs-select-footer"></div>
+      
+
+
+
+<!-- rails -->
+
+<div class="adblock rails  left"><!-- div#fs_fs_rails_left  -->
+<div align="center" id="div-gpt-ad-160x600-1"  data-freestar-ad="">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-160x600-1');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-160x600-1'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_rails_left -->
+</div>
+<div class="adblock rails right"><!-- div#fs_fs_rails_right  -->
+<div align="center" id="div-gpt-ad-160x600-2"  data-freestar-ad="">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-160x600-2');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-160x600-2'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_rails_right -->
+</div>
+
+
+<!-- sr_gender is used in Templates/Assets/GoogleAnalytics.tt2 -->
+<script>var sr_gender = "";</script>
+<!-- Google Analytics --> <!-- new extra script, apparently we only use one of these, regardless of the number of products... https://developers.google.com/tag-platform/gtagjs/install#google-analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1890630-3"></script> <script> var sr_cookie = vjs_readCookie('stathead_user') || ''; var sr_cookie_split = sr_cookie.split("::"); var sr_session_key = (sr_cookie_split.length > 1)?sr_cookie_split[2]:''; var sr_ad_free_key = "3"; var sr_site_id = "pfr"; var sr_is_subscriber = (sr_ad_free_key && sr_session_key.vjs_isMatch(new RegExp(sr_ad_free_key + "$"))) || sr_session_key.vjs_isMatch(/1$/) || (sr_site_id === 'stathead' && sr_session_key.vjs_isMatch(/[0-7]$/)); var sr_is_user = sr_cookie !== null && sr_cookie !== ''; var sr_seen_modal = vjs_readCookie('modal_ad') !== null; var sr_device = 'unk'; if (Modernizr.phone) { sr_device = 'phone'; } else if (Modernizr.tablet) { sr_device = 'tablet'; } else if (Modernizr.laptop) { sr_device = 'laptop'; } else if (Modernizr.desktop) { sr_device = 'desktop'; } var sr_stathead_site = vjs_readCookie('stathead_site') || ''; var sr_stathead_type = vjs_readCookie('stathead_type') || ''; /* new gtag theres an extra script tag we need to add that I'm not sure how that work for multiple ID's for GA, docs say to ignore it??? https://developers.google.com/tag-platform/gtagjs/install here they have 3 but just use the last one? */ window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); /* OLD, could not find require within reference docs https://developers.google.com/tag-platform/gtagjs/reference ga('require', 'linkid', 'linkid.js'); ga('require', 'ecommerce', 'ecommerce.js'); ga('require', 'displayfeatures'); */ /* new, creates+sends+sets */ /* for fbref we want to allow for tracking of 'men' and 'women' pages for leagues, clubs and players, so we can track the most popular women players easily. In Footer.tt2 there is a place to set sr_gender. */ gtag('config', 'UA-1890630-3', { 'dimension1': sr_is_subscriber, 'dimension2': sr_is_user, 'dimension3': typeof(sr_gender) === 'string'? sr_gender: null, 'dimension4': sr_stathead_type, 'dimension5': sr_stathead_site, 'metric1': Modernizr.viewport_width }); /* all sr-sites together */ /* new, I believe linker works as a parameter here, although there didn\'t seem to be a simple "true" value to set besides this one https://developers.google.com/analytics/devguides/collection/gtagjs/cross-domain */ gtag('config', 'UA-1890630-9', { 'linker': { 'domains' : ['stathead.com'] }, 'dimension1': sr_site_id, 'dimension2': sr_is_subscriber, 'dimension3': sr_is_user, 'dimension4': sr_seen_modal, 'dimension5': sr_device, 'dimension6': 'null', 'metric1': Modernizr.viewport_width, 'dimension8': (typeof sr_test == 'undefined')?'no-test':( sr_test ? 'non-blocking':'blocking') }); /* new, cribbed from: https://www.axllent.org/docs/track-outbound-links-with-gtag-js/ */ function _gaLt(event) { /* if GA is blocked or not loaded, or not main|middle|touch click then don\'t track */ if (typeof gtag == "undefined" || (event.which != 1 && event.which != 2)) { return; } var el = event.srcElement || event.target; /* loop up the DOM tree through parent elements if clicked element is not a link (eg: an image inside a link) */ while ( el && (typeof el.tagName == "undefined" || el.tagName.toLowerCase() != "a" || !el.href) ) { el = el.parentNode; } /* if a link with valid href has been clicked */ if (el && el.href) { var link = el.href; /* only if it is an external link */ if (link.indexOf(location.host) == -1 && !link.match(/^javascript\:/i)) { /* is target set and _(self|parent|top) */ var target = el.target && !el.target.match(/^_(self|parent|top)/i) ? el.target : false; /* assume a target if (ctrl|shift|meta)-click */ if ( event.ctrlKey || event.shiftKey || event.metaKey || event.which == 2 ) { target = "_blank"; } /* tracker has not yet run */ var hbrun = false; /* hitBack to open link in same window after tracker */ var hitBack = function () { /* run once only */ if (hbrun) return; hbrun = true; window.location.href = link; }; if (target) { /* if target opens a new window then just track */ gtag("event", link, { event_category: "Outgoing Links", event_label: document.location.pathname + document.location.search, }); } else { /* Prevent standard click, track then open */ if (event.type == "mousedown") { var blockClick = function (event) { event.preventDefault(); /* remove click event after click */ el.removeEventListener("click", boundClick); }; /* bind the click event */ var boundClick = blockClick.bind(event); /* prevent the click */ el.addEventListener("click", boundClick); } event.preventDefault ? event.preventDefault() : (event.returnValue = !1); /* send event with callback */ gtag("event", link, { event_category: "Outgoing Links", event_label: document.location.pathname + document.location.search, event_callback: hitBack, }); /* Run hitBack again if GA takes longer than 1 second */ setTimeout(hitBack, 1000); } } } } var _w = window; /* Use "click" if touchscreen device, else "mousedown" */ var _gaLtEvt = "ontouchstart" in _w ? "click" : "mousedown"; /* Attach the event to all clicks in the document after page has loaded */ _w.addEventListener( "load", function () { document.body.addEventListener(_gaLtEvt, _gaLt, !1); }, !1 ); </script><!-- End Google Analytics -->
+
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20503178.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+</body>
+<!-- SR -->
+</html>
+
+
