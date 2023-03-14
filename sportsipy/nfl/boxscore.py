@@ -331,7 +331,7 @@ class Boxscore:
         url = BOXSCORE_URL % uri
         try:
             url_data = pq(url=url)
-        except HTTPError:
+        except (HTTPError, AttributeError):
             return None
         # For NFL, a 404 page doesn't actually raise a 404 error, so it needs
         # to be manually checked.

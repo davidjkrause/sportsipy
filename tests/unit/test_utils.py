@@ -49,7 +49,7 @@ class MockHtml:
         return Html(self.html_string, self.item_list)
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status_code=200):
             self.status_code = status_code

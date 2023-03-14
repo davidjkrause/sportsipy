@@ -17,7 +17,7 @@ def read_file(filename):
     return open('%s.html' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status=200):
             self.url = url
@@ -183,12 +183,11 @@ class TestNCAABPlayer:
     def test_correct_initial_index_found(self):
         seasons = ['2017-18', 'Career', '2016-17']
         mock_season = mock.PropertyMock(return_value=seasons)
-        player = Player('carsen-edwards-1')
-        type(player)._season = mock_season
+        type(self.player)._season = mock_season
 
-        result = player._find_initial_index()
+        result = self.player._find_initial_index()
 
-        assert player._index == 1
+        assert self.player._index == 1
 
     def test_dataframe_returns_dataframe(self):
         dataframe = [
@@ -446,5 +445,6 @@ Vince Edwards (vince-edwards-2)"""
 
         assert roster.__repr__() == expected
 
-    def test_coach(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_coach(self, *args, **kwargs):
         assert "Matt Painter" == Roster('PURDUE', year=YEAR).coach

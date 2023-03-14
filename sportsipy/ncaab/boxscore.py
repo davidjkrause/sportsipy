@@ -260,7 +260,7 @@ class Boxscore:
         url = BOXSCORE_URL % uri
         try:
             url_data = pq(url=url)
-        except HTTPError:
+        except (HTTPError, AttributeError):
             return None
         return pq(utils._remove_html_comment_tags(url_data))
 

@@ -40,7 +40,7 @@ def read_file(filename):
     return open(filepath, 'r').read()
 
 
-def mock_pyquery(url, status_code=404):
+def mock_pyquery(url, timeout=None, status_code=404):
     class MockPQ:
         def __init__(self, html_contents, status_code=404):
             self.url = url
@@ -50,7 +50,7 @@ def mock_pyquery(url, status_code=404):
             self.html_contents = html_contents
             self.text = html_contents
 
-    if url == '404':
+    if '404' in url:
         return MockPQ('404 error', 200)
     if 'bad' in url:
         return MockPQ(None)
@@ -196,7 +196,8 @@ class TestNFLBoxscore:
 
         assert result is None
 
-    def test_url_404_page_returns_none(self):
+    @patch('requests.get', side_effect=mock_pyquery)
+    def test_url_404_page_returns_none(self, *args, **kwargs):
         result = Boxscore(None)._retrieve_html_page('404')
 
         assert result is None

@@ -16,7 +16,7 @@ def read_file(filename):
     return open('%s.html' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status=200):
             self.url = url
@@ -482,13 +482,15 @@ class TestNCAAFPlayer:
         for attribute, value in stats.items():
             assert getattr(player, attribute) == value
 
-    def test_ncaaf_404_returns_none_with_no_errors(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_ncaaf_404_returns_none_with_no_errors(self, *args, **kwargs):
         player = Player('bad')
 
         assert player.name is None
         assert player.dataframe is None
 
-    def test_ncaaf_404_returns_none_for_different_season(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_ncaaf_404_returns_none_for_different_season(self, *args, **kwargs):
         player = Player('bad')
         player = player('2017')
 
@@ -575,5 +577,6 @@ David Blough (rondale-moore-1)"""
 
         assert roster.__repr__() == expected
 
-    def test_coach(self):
-        assert "Troy Calhoun" == Roster('air-force', year=YEAR).coach
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_coach(self,*args,**kwargs):
+        assert "Jeff Brohm" == Roster('PURDUE', year=YEAR).coach

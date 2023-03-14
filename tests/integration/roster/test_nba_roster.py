@@ -17,7 +17,7 @@ def read_file(filename):
     return open('%s.html' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status=200):
             self.url = url
@@ -1220,7 +1220,8 @@ class TestNBAPlayer:
         frames = [df, player.dataframe]
         df1 = pd.concat(frames).drop_duplicates(keep=False)
 
-    def test_nba_player_with_no_stats_handled_without_error(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_nba_player_with_no_stats_handled_without_error(self, *args, **kwargs):
         player = Player('youngtr01')
 
         assert player.name == 'Trae Young'
@@ -1327,5 +1328,6 @@ James Harden (hardeja01)"""
 
         assert roster.__repr__() == expected
 
-    def test_coach(self):
-        assert "Stephen Silas" == Roster('HOU').coach
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_coach(self, *args, **kwargs):
+        assert "Mike D'Antoni" == Roster('HOU').coach

@@ -17,7 +17,7 @@ def read_file(filename):
     return open('%s' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 200
@@ -262,7 +262,8 @@ class TestMLBIntegration:
         for team in teams:
             assert team._year == '2021'
 
-    def test_mlb_empty_page_returns_no_teams(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_mlb_empty_page_returns_no_teams(self, *args, **kwargs):
         flexmock(utils) \
             .should_receive('_no_data_found') \
             .once()
@@ -274,7 +275,8 @@ class TestMLBIntegration:
 
         assert len(teams) == 0
 
-    def test_mlb_team_string_representation(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_mlb_team_string_representation(self, *args, **kwargs):
         hou = Team('HOU')
 
         assert hou.__repr__() == 'Houston Astros (HOU) - 2021'

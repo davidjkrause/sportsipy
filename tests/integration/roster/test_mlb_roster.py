@@ -17,7 +17,7 @@ def read_file(filename):
     return open('%s.shtml' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status=200):
             self.url = url
@@ -1165,12 +1165,11 @@ class TestMLBPitcher:
     def test_correct_initial_index_found(self):
         seasons = ['2017', None, '2018']
         mock_season = mock.PropertyMock(return_value=seasons)
-        player = Player('verlaju01')
-        type(player)._season = mock_season
+        type(self.player)._season = mock_season
 
-        result = player._find_initial_index()
+        result = self.player._find_initial_index()
 
-        assert player._index == 1
+        assert self.player._index == 1
 
 
 class TestMLBRoster:
@@ -1252,5 +1251,7 @@ José Altuve (mortoch02)"""
 
         assert roster.__repr__() == expected
 
-    def test_coach(self):
-        assert "AJ Hinch" == Roster('HOU', year=YEAR).coach
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_coach(self, *args, **kwargs):
+        roster = Roster('HOU', year=YEAR)
+        assert "AJ Hinch" == roster.coach

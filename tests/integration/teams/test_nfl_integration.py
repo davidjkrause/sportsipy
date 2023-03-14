@@ -18,7 +18,7 @@ def read_file(filename):
     return open('%s' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 200
@@ -37,7 +37,7 @@ def mock_pyquery(url):
     return MockPQ(html_contents)
 
 
-def mock_request(url):
+def mock_request(url, timeout=None):
     class MockRequest:
         def __init__(self, html_contents, status_code=200):
             self.status_code = status_code
@@ -67,6 +67,7 @@ class MockSchedule:
 
 class TestNFLIntegration:
     @mock.patch('requests.get', side_effect=mock_pyquery)
+    @mock.patch('requests.head', side_effect=mock_request)
     def setup_method(self, *args, **kwargs):
         self.results = {
             'rank': 6,
@@ -125,7 +126,9 @@ class TestNFLIntegration:
     def test_nfl_integration_returns_correct_number_of_teams(self):
         assert len(self.teams) == len(self.abbreviations)
 
-    def test_nfl_integration_returns_correct_attributes_for_team(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    @mock.patch('requests.head', side_effect=mock_request)
+    def test_nfl_integration_returns_correct_attributes_for_team(self, *args, **kwargs):
         kansas = self.teams('KAN')
 
         for attribute, value in self.results.items():
@@ -135,7 +138,8 @@ class TestNFLIntegration:
         for team in self.teams:
             assert team.abbreviation in self.abbreviations
 
-    def test_nfl_integration_dataframe_returns_dataframe(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_nfl_integration_dataframe_returns_dataframe(self, *args, **kwargs):
         df = pd.DataFrame([self.results], index=['KAN'])
 
         kansas = self.teams('KAN')
@@ -150,17 +154,20 @@ class TestNFLIntegration:
 
         assert df1.empty
 
-    def test_nfl_integration_all_teams_dataframe_returns_dataframe(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_nfl_integration_all_teams_dataframe_returns_dataframe(self, *args, **kwargs):
         result = self.teams.dataframes.drop_duplicates(keep=False)
 
         assert len(result) == len(self.abbreviations)
         assert set(result.columns.values) == set(self.results.keys())
 
-    def test_nfl_invalid_team_name_raises_value_error(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_nfl_invalid_team_name_raises_value_error(self, *args, **kwargs):
         with pytest.raises(ValueError):
             self.teams('INVALID_NAME')
 
-    def test_nfl_empty_page_returns_no_teams(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_nfl_empty_page_returns_no_teams(self, *args, **kwargs):
         flexmock(utils) \
             .should_receive('_no_data_found') \
             .once()

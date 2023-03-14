@@ -20,7 +20,7 @@ def read_file(filename):
     return open('%s' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 200
@@ -127,23 +127,19 @@ class TestNCAAFBoxscore:
         assert df1.empty
 
     def test_ncaaf_boxscore_players(self):
-        boxscore = Boxscore(BOXSCORE)
+        assert len(self.boxscore.home_players) == 37
+        assert len(self.boxscore.away_players) == 45
 
-        assert len(boxscore.home_players) == 37
-        assert len(boxscore.away_players) == 45
-
-        for player in boxscore.home_players:
+        for player in self.boxscore.home_players:
             assert not player.dataframe.empty
-        for player in boxscore.away_players:
+        for player in self.boxscore.away_players:
             assert not player.dataframe.empty
 
     def test_ncaaf_boxscore_string_representation(self):
         expected = ('Boxscore for Clemson at Wake Forest '
                     '(Saturday Sep 12, 2020)')
 
-        boxscore = Boxscore(BOXSCORE)
-
-        assert boxscore.__repr__() == expected
+        assert self.boxscore.__repr__() == expected
 
 
 class TestNCAAFBoxscores:

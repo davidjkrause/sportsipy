@@ -15,7 +15,7 @@ class MockSquadPlayer:
         return pq('<tr></tr>')
 
 
-def mock_httperror(url):
+def mock_httperror(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 504

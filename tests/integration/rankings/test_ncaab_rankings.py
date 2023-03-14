@@ -14,7 +14,7 @@ def read_file(filename):
     return open(filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status_code=200):
             self.url = url

@@ -4,7 +4,7 @@ from sportsipy.nfl.player import AbstractPlayer
 from sportsipy.nfl.roster import Player
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.url = url

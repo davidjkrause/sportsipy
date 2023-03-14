@@ -4,7 +4,7 @@ from sportsipy import utils
 from sportsipy.nba.nba_utils import _retrieve_all_teams
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status_code=200):
             self.status_code = status_code

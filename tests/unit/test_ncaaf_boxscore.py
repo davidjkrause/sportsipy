@@ -38,15 +38,14 @@ class MockName:
         return self._name.replace('<a>cfb/schools</a>', '')
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 404
             self.html_contents = html_contents
             self.text = html_contents
 
-    boxscore = read_file('%s.html' % BOXSCORE)
-    return MockPQ(boxscore)
+    return MockPQ('')
 
 
 class TestNCAAFBoxscore:
@@ -303,7 +302,8 @@ class TestNCAAFBoxscore:
             'home': [None]
         }
 
-    def test_invalid_url_returns_none(self):
+    @patch('requests.get', side_effect=mock_pyquery)
+    def test_invalid_url_returns_none(self, *args, **kwargs):
         result = Boxscore(None)._retrieve_html_page('')
 
         assert result is None

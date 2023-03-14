@@ -30,7 +30,7 @@ def mock_request(url):
         return MockRequest('bad', status_code=404)
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 200
@@ -155,7 +155,8 @@ class TestNBAIntegration:
         with pytest.raises(ValueError):
             self.teams('INVALID_NAME')
 
-    def test_nba_empty_page_returns_no_teams(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_nba_empty_page_returns_no_teams(self, *args, **kwargs):
         flexmock(utils) \
             .should_receive('_no_data_found') \
             .once()
@@ -167,18 +168,22 @@ class TestNBAIntegration:
 
         assert len(teams) == 0
 
-    def test_pulling_team_directly(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_pulling_team_directly(self, *args, **kwargs):
         detroit = Team('DET')
 
         for attribute, value in self.results.items():
             assert getattr(detroit, attribute) == value
 
     def test_team_string_representation(self):
-        detroit = Team('DET')
+        detroit = self.teams('DET')
 
         assert detroit.__repr__() == 'Detroit Pistons (DET) - 2021'
 
-    def test_teams_string_representation(self):
+
+class TestNBAIntegrationAllTeams:
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_teams_string_representation(self, *args, **kwargs):
         expected = """Milwaukee Bucks (MIL)
 Brooklyn Nets (BRK)
 Washington Wizards (WAS)

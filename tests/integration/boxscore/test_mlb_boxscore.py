@@ -20,7 +20,7 @@ def read_file(filename):
     return open('%s' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 200
@@ -170,23 +170,19 @@ class TestMLBBoxscore:
         assert df1.empty
 
     def test_mlb_boxscore_player(self):
-        boxscore = Boxscore(BOXSCORE)
+        assert len(self.boxscore.home_players) == 15
+        assert len(self.boxscore.away_players) == 15
 
-        assert len(boxscore.home_players) == 15
-        assert len(boxscore.away_players) == 15
-
-        for player in boxscore.home_players:
+        for player in self.boxscore.home_players:
             assert not player.dataframe.empty
-        for player in boxscore.away_players:
+        for player in self.boxscore.away_players:
             assert not player.dataframe.empty
 
     def test_mlb_boxscore_string_representation(self):
         expected = ('Boxscore for San Francisco Giants at '
                     'Los Angeles Angels (Monday, August 17, 2020)')
 
-        boxscore = Boxscore(BOXSCORE)
-
-        assert boxscore.__repr__() == expected
+        assert self.boxscore.__repr__() == expected
 
 
 class TestMLBBoxscores:

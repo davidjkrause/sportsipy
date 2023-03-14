@@ -16,7 +16,7 @@ def read_file(filename):
     return open('%s.htm' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status=200):
             self.url = url
@@ -1497,5 +1497,6 @@ Thomas Morstead (MorsTh00)"""
 
         assert roster.__repr__() == expected
 
-    def test_coach(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_coach(self, *args, **kwargs):
         assert "Sean Payton" == Roster('NOR', year=YEAR).coach

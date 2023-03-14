@@ -35,7 +35,7 @@ class MockBoxscoreData:
         return [self._fields]
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 404

@@ -5,7 +5,7 @@ from sportsipy.mlb.player import (AbstractPlayer,
 from sportsipy.mlb.roster import _cleanup, Player
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.url = url

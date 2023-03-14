@@ -16,7 +16,7 @@ def read_file(filename):
     return open('%s.html' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents, status=200):
             self.url = url
@@ -757,5 +757,6 @@ Henrik Zetterberg (zettehe01)"""
 
         assert roster.__repr__() == expected
 
-    def test_coach(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_coach(self, *args, **kwargs):
         assert "Jeff Blashill" == Roster('DET', year=YEAR).coach

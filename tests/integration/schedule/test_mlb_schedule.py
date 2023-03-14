@@ -22,7 +22,7 @@ def read_file(filename):
     return open('%s' % filepath, 'r', encoding='utf8').read()
 
 
-def mock_pyquery(url):
+def mock_pyquery(url, timeout=None):
     class MockPQ:
         def __init__(self, html_contents):
             self.status_code = 200
@@ -176,7 +176,8 @@ class TestMLBSchedule:
         with pytest.raises(ValueError):
             self.schedule(datetime.now())
 
-    def test_empty_page_return_no_games(self):
+    @mock.patch('requests.get', side_effect=mock_pyquery)
+    def test_empty_page_return_no_games(self, *args, **kwargs):
         flexmock(utils) \
             .should_receive('_no_data_found') \
             .once()
