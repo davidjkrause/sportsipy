@@ -54,7 +54,8 @@ class Rankings:
             Returns a PyQuery object of the rankings HTML page.
         """
         try:
-            return pq(url=RANKINGS_URL % year)
+            url_data = pq(url=RANKINGS_URL % year)
+            return pq(utils._remove_html_comment_tags(url_data))
         except HTTPError:
             return None
 
@@ -269,7 +270,8 @@ class CFPRankings:
             Returns a PyQuery object of the rankings HTML page.
         """
         try:
-            return pq(url=RANKINGS_URL % year)
+            url_data = pq(url=RANKINGS_URL % year)
+            return pq(utils._remove_html_comment_tags(url_data))
         except HTTPError:
             return None
 
