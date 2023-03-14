@@ -1831,7 +1831,7 @@ class Roster:
         string
             Returns a string of the coach's name.
         """
-        for line in page(PLAYER_SCHEME['summary']).find('p').items():
+        for line in page.find('p').items():
             strong = line.find('strong')
             if hasattr(strong, 'text') and strong.text().strip() == 'Coach:':
                 return line.find('a').text()
