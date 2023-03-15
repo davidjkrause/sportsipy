@@ -93,11 +93,11 @@ ROSTER_SCHEME = {
     'td[data-stat="def_actions_outside_pen_area_per90_gk"]',
     'average_keeper_action_outside_penalty_distance':
     'td[data-stat="avg_distance_def_actions_gk"]',
-    'shots': 'td[data-stat="shots_total"]',
+    'shots': 'td[data-stat="shots"]',
     'shots_on_target': 'td[data-stat="shots_on_target"]',
     'free_kick_shots': 'td[data-stat="shots_free_kicks"]',
     'shots_on_target_percentage': 'td[data-stat="shots_on_target_pct"]',
-    'shots_per_90': 'td[data-stat="shots_total_per90"]',
+    'shots_per_90': 'td[data-stat="shots_per90"]',
     'shots_on_target_per_90': 'td[data-stat="shots_on_target_per90"]',
     'goals_per_shot': 'td[data-stat="goals_per_shot"]',
     'goals_per_shot_on_target': 'td[data-stat="goals_per_shot_on_target"]',
