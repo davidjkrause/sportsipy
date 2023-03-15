@@ -124,8 +124,6 @@ class SquadPlayer:
         self._long_passes_completed = None
         self._long_passes_attempted = None
         self._long_pass_completion = None
-        self._left_foot_passes = None
-        self._right_foot_passes = None
         self._free_kick_passes = None
         self._through_balls = None
         self._corner_kicks = None
@@ -165,8 +163,6 @@ class SquadPlayer:
         self._successful_dribbles = None
         self._attempted_dribbles = None
         self._dribble_success_rate = None
-        self._players_dribbled_past = None
-        self._nutmegs = None
         self._dribblers_tackled = None
         self._dribblers_contested = None
         self._tackle_percentage = None
@@ -353,8 +349,6 @@ class SquadPlayer:
             'long_passes_completed': self.long_passes_completed,
             'long_passes_attempted': self.long_passes_attempted,
             'long_pass_completion': self.long_pass_completion,
-            'left_foot_passes': self.left_foot_passes,
-            'right_foot_passes': self.right_foot_passes,
             'free_kick_passes': self.free_kick_passes,
             'through_balls': self.through_balls,
             'corner_kicks': self.corner_kicks,
@@ -397,8 +391,6 @@ class SquadPlayer:
             'successful_dribbles': self.successful_dribbles,
             'attempted_dribbles': self.attempted_dribbles,
             'dribble_success_rate': self.dribble_success_rate,
-            'players_dribbled_past': self.players_dribbled_past,
-            'nutmegs': self.nutmegs,
             'dribblers_tackled': self.dribblers_tackled,
             'dribblers_contested': self.dribblers_contested,
             'tackle_percentage': self.tackle_percentage,
@@ -1112,22 +1104,6 @@ class SquadPlayer:
         return self._long_pass_completion
 
     @int_property_decorator
-    def left_foot_passes(self):
-        """
-        Returns an ``int`` of the number of passes the player made with their
-        left foot.
-        """
-        return self._left_foot_passes
-
-    @int_property_decorator
-    def right_foot_passes(self):
-        """
-        Returns an ``int`` of the number of passes the player made with their
-        right foot.
-        """
-        return self._right_foot_passes
-
-    @int_property_decorator
     def free_kick_passes(self):
         """
         Returns an ``int`` of the number of passes the player made from a free
@@ -1423,20 +1399,6 @@ class SquadPlayer:
         return self._dribble_success_rate
 
     @int_property_decorator
-    def players_dribbled_past(self):
-        """
-        Returns an ``int`` of the number of opponents the player dribbled past.
-        """
-        return self._players_dribbled_past
-
-    @int_property_decorator
-    def nutmegs(self):
-        """
-        Returns an ``int`` of the number of opponents the player has nutmegged.
-        """
-        return self._nutmegs
-
-    @int_property_decorator
     def dribblers_tackled(self):
         """
         Returns an ``int`` of the number of opponents who were attempting a
@@ -1619,6 +1581,46 @@ class Roster:
                 player_data_dict[player_id] = {'data': player_data}
         return player_data_dict
 
+    def _competition_id(self, doc):
+        """
+        Find the competition id used as a table postfix from the page header
+
+        There used to be a lookup table of squad IDs to league IDs, but the
+        source changed all the league IDs.  Rather than go through each team
+        in that table, use the competition ID from the page rather than a fixed
+        competition per team.  
+        
+        This is actually required for teams that change leagues due to promotion
+        or relegation, to get any stats from historical seasons.
+
+        This does NOT work to get data for teams that play in multiple competitions,
+        the table postfix, there is still work to do in the module to support.
+
+        Parameters
+        ----------
+        doc : PyQuery object
+            Containing the entire roster page being parsed
+
+        Returns
+        -------
+        competition_id
+            id to be used as a table postfix when parsing stats tables on the
+            page, or None if the id couldn't be parsed
+        """
+        for line in pq(doc).find('p').items():
+            # The competition id is in the href= attribute of the <a> tag
+            # after a strong tag containing the exact text "Record:", and
+            # needs to be parsed with a regex from the attribute
+            strong = pq(line).find('strong')
+            if hasattr(strong, 'text') and strong.text().strip() == 'Record:':
+                href = pq(strong).nextAll('a').attr('href')
+                try:
+                    id = re.compile(r'/comps/(\d+)/').search(href).group(1)
+                    return(id)
+                except AttributeError:
+                    continue
+        return None
+
     def _pull_stats(self, doc):
         """
         Download the team page and pull all stats.
@@ -1651,14 +1653,19 @@ class Roster:
 
         # Some leagues have a special ID for the tables. First lookup that ID
         # if it exists, but if not, use 'ks_combined' as the default.
-        postfix = LEAGUE_IDS.get(self._squad_id, 'ks_combined')
+        postfix = self._competition_id(doc)
+        if postfix is None:
+            postfix = LEAGUE_IDS.get(self._squad_id, 'ks_combined')
 
         for table_id in ['table#stats_standard_',
                          'table#stats_keeper_',
                          'table#stats_keeper_adv_',
                          'table#stats_shooting_',
                          'table#stats_passing_',
+                         'table#stats_passing_types_',
                          'table#stats_playing_time_',
+                         'table#stats_possession_',
+                         'table#stats_defense_',
                          'table#stats_misc_']:
             table = _get_stats_table(doc, table_id + 'ks_combined')
             if not table:

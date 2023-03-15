@@ -92,17 +92,25 @@ class Team:
         doc : PyQuery object
             A PyQuery object of the squad's entire HTML page.
         """
-        name = doc('h1[itemprop="name"]')
+        name = doc('div[data-template="Partials/Teams/Summary"]')
+        name = name('h1')
         name = name('span').text()
         # Name is in format "YYYY-YYYY Team Name Stats"
         # or "YYYY Team Name Stats"
-        # ie. "2019-2020 Tottenham Hotspur Stats"
+        # ie. "2019-2020 Tottenham Hotspur Stats (Premier League)"
         # or "2020 Sporting KC Stats"
         # The season will always be the first part of the string.
         season = name.split(' ')[0]
         # The team's name will always be between the season and the string
-        # "Stats", and therefore only those pieces should be pulled.
-        name = ' '.join(name.split(' ')[1:-1])
+        # "Stats", and therefore only those pieces should be included
+        partial_name = []
+        # This could probably be more "pythonic", alas it works
+        for p in name.split(' ')[1:]:
+            if p != 'Stats':
+                partial_name.append(p)
+            else:
+                break
+        name = ' '.join(partial_name)
         self._season = season
         self._name = name
 
@@ -131,15 +139,14 @@ class Team:
         home_points, away_points = None, None
         records = record_line.lower().replace('home record: ', '')
         records = records.replace('away record: ', '')
-        match_records = re.findall(r'\(.*?\)', records)
+        match_records = re.findall(r'\d+-\d+-\d+', records)
         p = re.compile(r'[\(\)]')
         if len(match_records) == 2:
-            home_record, away_record = [p.sub(' ', x).strip()
-                                        for x in match_records]
-        points = re.sub(r'\(.*?\)', '', records)
-        points = re.findall(r'\d+', points)
+            home_record = match_records[0]
+            away_record = match_records[1]
+        points = re.findall(r'\d+ points', records)
         if len(points) == 2:
-            home_points, away_points = [int(p) for p in points]
+            home_points, away_points = [int(p.replace(' points', '')) for p in points]
         return home_record, away_record, home_points, away_points
 
     def _records(self, record_line):
