@@ -23,6 +23,7 @@ class TestFBTeam:
     def setup_method(self):
         self.results = {
             'name': 'Tottenham Hotspur',
+            'short_name': 'Tottenham',
             'season': '2019-2020',
             'record': '16-11-11',
             'points': 59,
