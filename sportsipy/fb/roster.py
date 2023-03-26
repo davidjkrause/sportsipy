@@ -42,6 +42,9 @@ class SquadPlayer:
         self._assists = None
         self._penalty_kicks = None
         self._penalty_kick_attempts = None
+        self._corners_in = None
+        self._corners_out = None
+        self._corners_straight = None
         self._yellow_cards = None
         self._red_cards = None
         self._goals_per_90 = None
@@ -260,6 +263,9 @@ class SquadPlayer:
             'assists': self.assists,
             'penalty_kicks': self.penalty_kicks,
             'penalty_kick_attempts': self.penalty_kick_attempts,
+            'corners_in': self.corners_in,
+            'corners_out': self.corners_out,
+            'corners_straight': self.corners_straight,
             'yellow_cards': self.yellow_cards,
             'red_cards': self.red_cards,
             'goals_per_90': self.goals_per_90,
@@ -488,6 +494,30 @@ class SquadPlayer:
         attempted.
         """
         return self._penalty_kick_attempts
+
+    @int_property_decorator
+    def corners_in(self):
+        """
+        Returns an ``int`` of the number of inswing corners the player has
+        attempted.
+        """
+        return self._corners_in
+
+    @int_property_decorator
+    def corners_out(self):
+        """
+        Returns an ``int`` of the number of outswing corners the player has
+        attempted.
+        """
+        return self._corners_out
+
+    @int_property_decorator
+    def corners_straight(self):
+        """
+        Returns an ``int`` of the number of straight corners the player has
+        attempted.
+        """
+        return self._corners_straight
 
     @int_property_decorator
     def yellow_cards(self):
